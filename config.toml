@@ -54,22 +54,22 @@ name = "Galleries"
 weight = 5
 
 # menu footer
-[[menu.main]]
+[[menu.footer]]
 URL = "about"
 name = "About"
 weight = 1
 
-[[menu.main]]
+[[menu.footer]]
 URL = "about"
 name = "About"
 weight = 1
 
-[[menu.main]]
+[[menu.footer]]
 URL = "about"
 name = "About"
 weight = 1
 
-[[menu.main]]
+[[menu.footer]]
 URL = "about"
 name = "About"
 weight = 1
