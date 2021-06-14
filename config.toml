@@ -27,7 +27,7 @@ link = "plugins/shuffle/shuffle.min.js"
 link = "plugins/google-map/map.js"
 
 
-# menu
+# menu header
 [[menu.main]]
 URL = "about"
 name = "About"
@@ -45,9 +45,34 @@ weight = 3
 
 [[menu.main]]
 URL = "contact"
-name = "Contact"
+name = "Get in Touch"
 weight = 4
 
+[[menu.main]]
+URL = "galleries"
+name = "Galleries"
+weight = 5
+
+# menu footer
+[[menu.main]]
+URL = "about"
+name = "About"
+weight = 1
+
+[[menu.main]]
+URL = "about"
+name = "About"
+weight = 1
+
+[[menu.main]]
+URL = "about"
+name = "About"
+weight = 1
+
+[[menu.main]]
+URL = "about"
+name = "About"
+weight = 1
 
 # default parameters
 [params]
