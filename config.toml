@@ -53,6 +53,11 @@ URL = "gallery"
 name = "Gallery"
 weight = 5
 
+[[menu.main]]
+URL = "shop"
+name = "My Shop"
+weight = 6
+
 # menu footer
 [[menu.footer]]
 URL = "about"
@@ -101,7 +106,7 @@ preloader = "images/preloader.gif" # use png, jpg, svg or gif format
 # contact
 [params.contact]
 enable = true
-form_action = "#" # contact form works with : https://formspree.io
+form_action = "https://getform.io/2434" # contact form works with : https://formspree.io
 
 # google map
 [params.map]

@@ -14,5 +14,4 @@ draft: false
   {{< figure src="images/about/author.jpg" >}}
   {{< figure src="images/about/author.jpg" >}}
   {{< figure src="images/about/author.jpg" >}}
-  
 {{< /gallery >}}
