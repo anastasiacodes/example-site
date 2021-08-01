@@ -1,14 +1,14 @@
 ---
-title: "Rock Climbing"
-date: 2019-05-12T12:14:34+06:00
-image: "images/portfolio/item-3.png"
-client: "John Doe"
-project_url : "https://themefisher.com/"
-categories: ["illustration"]
-description: "This is meta description."
-draft: false
----
+title: Rock Climbing
+date: 2019-05-12T12:14:34.000+06:00
+image: "/images/rock-climbing-1-min.jpg"
+client: John Doe
+project_url: https://themefisher.com/
+categories:
+- illustration
+description: This is meta description.
 
+---
 #### Project Requirements
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
