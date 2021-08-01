@@ -1,7 +1,7 @@
 ---
 title: "Pets"
 image: '/images/pets-4-min.jpg'
-categories: ['pet']
+categories: ["pet"]
 description: This is meta description.
 draft: true
 
