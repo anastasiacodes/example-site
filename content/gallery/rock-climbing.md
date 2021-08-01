@@ -1,11 +1,8 @@
 ---
 title: "Rock Climbing"
-date: 2019-05-12T12:14:34+06:00
-image: "images/portfolio/item-3.png"
-client: "John Doe"
-project_url : "https://themefisher.com/"
+image: "/images/rock-climbing-1-min.jpg"
 categories: ["rock climbing"]
-description: "This is meta description."
+description: "This is meta description that is used for SEOs."
 draft: false
 ---
 
