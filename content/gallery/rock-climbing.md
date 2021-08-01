@@ -4,8 +4,7 @@ date: 2019-05-12T12:14:34.000+06:00
 image: "/images/rock-climbing-1-min.jpg"
 client: John Doe
 project_url: https://themefisher.com/
-categories:
-- illustration
+categories: []
 description: This is meta description.
 
 ---
