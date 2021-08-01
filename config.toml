@@ -33,14 +33,10 @@ URL = "about"
 name = "About"
 weight = 1
 
-[[menu.main]]
-URL = "blog"
-name = "Blog"
-weight = 2
 
 [[menu.main]]
-URL = "portfolio"
-name = "Portfolio"
+URL = "gallery"
+name = "Gallery"
 weight = 3
 
 [[menu.main]]
@@ -48,10 +44,7 @@ URL = "contact"
 name = "Get in Touch"
 weight = 4
 
-[[menu.main]]
-URL = "gallery"
-name = "Gallery"
-weight = 5
+
 
 # menu footer
 [[menu.footer]]
