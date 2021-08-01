@@ -53,11 +53,6 @@ URL = "gallery"
 name = "Gallery"
 weight = 5
 
-[[menu.main]]
-URL = "shop"
-name = "My Shop"
-weight = 6
-
 # menu footer
 [[menu.footer]]
 URL = "about"
