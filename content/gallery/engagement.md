@@ -1,11 +1,9 @@
 ---
-title: Engagement
-date: 2019-05-12T12:14:34.000+06:00
-image: "/images/annie-spratt-ltd6jhdcskw-unsplash.jpg"
-client: John Doe
-categories:
-- engagement
-description: This is meta description.
+title: "Engagement"
+image: "/images/engagement-2-min.jpg"
+categories: [ "engagement" ]
+description: "This is meta description that is used for SEOs."
+draft: false
 
 ---
 #### Project Requirement

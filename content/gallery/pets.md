@@ -1,12 +1,7 @@
 ---
-title: Pets
-date: 2019-05-12T12:14:34.000+06:00
-image: ''
-client: John Doe
-project_url: https://themefisher.com/
-categories:
-- design
-- development
+title: "Pets"
+image: '/images/pets-4-min.jpg'
+categories: ['pet']
 description: This is meta description.
 draft: true
 

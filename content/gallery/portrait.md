@@ -1,10 +1,7 @@
 ---
 title: "Portrait"
-date: 2019-05-12T12:14:34+06:00
-image: "images/portfolio/item-2.png"
-client: "John Doe"
-project_url : "https://themefisher.com/"
-categories: ["branding"]
+image: "/images/portrait-2-min.jpg"
+categories: ["portrait"]
 description: "This is meta description."
 draft: false
 ---

@@ -1,16 +1,12 @@
 ---
-title: Lifestyle
-date: 2019-05-12T12:14:34.000+06:00
-image: ''
-client: John Doe
-project_url: https://themefisher.com/
-categories:
-- design
-- development
+title: "Lifestyle"
+image: '/images/lifestyle-1-min.jpg'
+categories: ["lifestyle", "Portrait"]
 description: This is meta description.
 draft: true
 
 ---
+
 #### Project Requirements
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
