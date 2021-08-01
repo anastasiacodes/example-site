@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Rock Climbing"
 date: 2019-05-12T12:14:34+06:00
 image: "images/portfolio/item-3.png"
@@ -9,15 +8,6 @@ categories: ["rock climbing"]
 description: "This is meta description."
 draft: false
 ---
-=======
-title: Rock Climbing
-date: 2019-05-12T12:14:34.000+06:00
-image: "/images/rock-climbing-1-min.jpg"
-client: John Doe
-project_url: https://themefisher.com/
-categories: []
-description: This is meta description.
->>>>>>> dcabea59a029a394c1ca6ad6d38cc064fb3ef6e6
 
 ---
 #### Project Requirements
