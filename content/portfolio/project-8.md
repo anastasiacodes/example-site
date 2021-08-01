@@ -1,13 +1,12 @@
 ---
-title: Test Portfolio
+title: Test Gallery
 date: 2019-05-12T12:14:34.000+06:00
 image: "/images/annie-spratt-ltd6jhdcskw-unsplash.jpg"
 client: John Doe
 project_url: https://themefisher.com/
 categories:
-- illustration
 - development
-description: This is meta description.
+description: This is a gallery image.
 
 ---
 #### Project Requirements
