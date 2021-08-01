@@ -8,7 +8,6 @@ categories:
 - illustration
 - development
 description: This is meta description.
-draft: true
 
 ---
 #### Project Requirements
