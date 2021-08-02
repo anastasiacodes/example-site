@@ -5,28 +5,25 @@
 <!-- gallery -->
 <section class="section">
   <div class="container">
-      <div class="col-lg-11">
-
-        <div class="gallery">
-          {{if isset .Params "gallery" }}
-          {{ with .Resources.ByType "image" }}
-            <div class="Image">
-            {{ range . }}
-              <img src="{{ .RelPermalink }}">
-            {{ end }}
-            </div>
+    <div class=" col-12 mx-auto">
+      <div class="gallery">
+        {{if isset .Params "gallery" }}
+        {{ with .Resources.ByType "image" }}
+          <div class="rounded">
+          {{ range . }}
+          <div class="rounded">
+            <img class="rounded" src="{{ .RelPermalink }}">
+          </div>  
           {{ end }}
-          {{end}}
-        </div>
+          </div>
+        {{ end }}
+        {{end}}
+      </div>
 
-        <div class="content">{{.Content}}</div>
-
-        
-
-
+      <div class="content ">{{.Content}}</div>
     </div>
   </div>
 </section>
-<!-- /portfolio -->
+<!-- /gallery -->
 
 {{ end }}
