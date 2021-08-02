@@ -1,6 +1,6 @@
 ---
 title: "Rock Climbing"
-image: "/images/rock-climbing-1-min.jpg"
+image: "/images/gallery/rock-climbing/rock-climbing-1-min.jpg"
 categories: ["rock climbing"]
 description: "This is meta description that is used for SEOs."
 draft: false

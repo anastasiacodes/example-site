@@ -1,9 +1,9 @@
 ---
 title: "Lifestyle"
-image: '/images/lifestyle-1-min.jpg'
+image: "/images/gallery/lifestyle/lifestyle-1-min.jpg"
 categories: ["lifestyle", "Portrait"]
 description: This is meta description.
-draft: true
+draft: false
 
 ---
 

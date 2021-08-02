@@ -1,6 +1,6 @@
 ---
 title: "Pets"
-image: '/images/pets-4-min.jpg'
+image: '/images/gallery/pet/pets-4-min.jpg'
 categories: ["pet"]
 description: This is meta description.
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: "Portrait"
-image: "/images/portrait-2-min.jpg"
+image: "/images/gallery/portrait/portrait-2-min.jpg"
 categories: ["portrait"]
 description: "This is meta description."
 draft: false
