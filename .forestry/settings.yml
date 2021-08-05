@@ -5,10 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  label: Gallery
   path: data/gallery
-  match: "/data/*.yml"
+  label: Gallery
   create: all
+  match: "/data/*.yml"
 - type: directory
   path: content/about
   label: About
