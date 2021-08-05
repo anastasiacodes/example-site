@@ -39,6 +39,13 @@ sections:
   label: Shop
   create: all
   match: "**/*"
+sections:
+- type: directory
+  label: Data
+  path: data/gallery
+  match: "*.yml"
+  new_doc_ext: ".yml"
+  create: all
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
