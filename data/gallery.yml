@@ -1,43 +1,40 @@
-# Engagement Gallery
-engagement_gallery:
+# Gallery
+gallery:
   enable : true
   item:
     - title : "Engagement 1"
+      caption: "This is a caption."
       src : "/images/engagement-gallery/engagement-1-min.jpg"
-      URL : "http://examplesite.com"
       categories: ["engagement"]
       license : "Photography"
 
     - title : "Engagement 2"
+      caption: "This is a caption."
       src : "/images/engagement-gallery/engagement-2-min.jpg"
-      URL : "http://examplesite.com"
       categories: ["engagement"]
       license : "Photography"
 
     - title : "Engagement 3"
+      caption: "This is a caption."
       src : "/images/engagement-gallery/engagement-3-min.jpg"
-      URL : "http://examplesite.com"
       categories: ["engagement"]
       license : "Photography"
       
-# Lifestyle Gallery
-lifestyle_gallery:
-  enable : true
-  item:
     - title : "Lifestyle 1"
-      src : "/images/engagement-gallery/engagement-1-min.jpg"
-      URL : "http://examplesite.com"
+      caption: "This is a caption."
+      src : "/images/lifestyle-gallery/lifestyle-1-min.jpg"
       categories: ["lifestyle"]
       license : "Photography"
 
     - title : "Lifestyle 2"
-      src : "/images/engagement-gallery/engagement-2-min.jpg"
+      caption: "This is a caption."
+      src : "/images/lifestyle-gallery/lifestyle-2-min.jpg"
       URL : "http://examplesite.com"
       categories: ["lifestyle"]
       license : "Photography"
 
     - title : "Lifestyle 3"
-      src : "/images/engagement-gallery/engagement-3-min.jpg"
-      URL : "http://examplesite.com"
+      caption: "This is a caption."
+      src : "/images/lifestyle-gallery/lifestyle-3-min.jpg"
       categories: ["lifestyle"]
       license : "Photography"
