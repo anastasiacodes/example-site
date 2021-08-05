@@ -1,0 +1,11 @@
+---
+label: Engagement Gallery
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- name: engagement_gallery
+  type: image_gallery
+  config: {}
+  label: Engagement Gallery
