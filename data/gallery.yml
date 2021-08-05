@@ -1,0 +1,43 @@
+# Engagement Gallery
+engagement_gallery:
+  enable : true
+  item:
+    - title : "Engagement 1"
+      src : "/images/engagement-gallery/engagement-1-min.jpg"
+      URL : "http://examplesite.com"
+      categories: ["engagement"]
+      license : "Photography"
+
+    - title : "Engagement 2"
+      src : "/images/engagement-gallery/engagement-2-min.jpg"
+      URL : "http://examplesite.com"
+      categories: ["engagement"]
+      license : "Photography"
+
+    - title : "Engagement 3"
+      src : "/images/engagement-gallery/engagement-3-min.jpg"
+      URL : "http://examplesite.com"
+      categories: ["engagement"]
+      license : "Photography"
+      
+# Lifestyle Gallery
+lifestyle_gallery:
+  enable : true
+  item:
+    - title : "Lifestyle 1"
+      src : "/images/engagement-gallery/engagement-1-min.jpg"
+      URL : "http://examplesite.com"
+      categories: ["lifestyle"]
+      license : "Photography"
+
+    - title : "Lifestyle 2"
+      src : "/images/engagement-gallery/engagement-2-min.jpg"
+      URL : "http://examplesite.com"
+      categories: ["lifestyle"]
+      license : "Photography"
+
+    - title : "Lifestyle 3"
+      src : "/images/engagement-gallery/engagement-3-min.jpg"
+      URL : "http://examplesite.com"
+      categories: ["lifestyle"]
+      license : "Photography"
