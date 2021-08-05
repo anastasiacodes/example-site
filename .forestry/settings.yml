@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: directory
   label: Data
-  path: data/gallery
+  path: data/gallery.yml
   match: "*.yml"
   new_doc_ext: ".yml"
   create: all
