@@ -5,15 +5,7 @@ fields:
 - type: text
   name: title
   label: title
-- type: file
-  name: image
-  label: image
-- type: list
-  name: categories
-  label: categories
-- type: text
-  name: description
-  label: description
-- type: boolean
-  name: gallery
-  label: gallery
+- name: engagement_gallery
+  type: image_gallery
+  config: {}
+  label: Engagement Gallery
