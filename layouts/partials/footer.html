@@ -48,6 +48,14 @@
 </footer>
 <!-- /footer -->
 
+<script>
+  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+  });
+</script>
+
+
 {{ "<!-- Google Map API -->" | safeHTML }}
 {{ if site.Params.map.enable }}
 <script src="{{ site.Params.map.gmap_api | safeURL }}"></script>

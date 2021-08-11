@@ -2,7 +2,6 @@
 
 {{ partial "page-title.html" . }}
 
-
 <section class="section">
   <div class="container">
     <div class="row mb-5">
@@ -13,11 +12,14 @@
           </label>
 					{{ $categories := slice }}
 					{{ range site.Data.gallery.gallery.item  }}
+          
 					{{ range .categories }}
+          
 					{{ $categories = $categories | append . }}
 					{{ end }}
-					{{ end }}
+          {{ end }}
 					{{ range ( $categories | uniq ) }}
+          
           <label class="btn btn-sm btn-primary">
             <input type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ . | humanize }}
           </label>
@@ -25,26 +27,26 @@
         </div>
       </div>
     </div>
-
     <div class="row shuffle-wrapper">
       {{ range site.Data.gallery.gallery.item }}
-      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{{range $index, $element:= .categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
-        <div class="position-relative rounded hover-wrapper">
-          <a href="{{ .URL | safeURL }}" class="img-fluid rounded w-100 d-block"><img class="d-unset img-fluid" src="{{.src| absURL}}" alt="image"></a>
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="{{ .Permalink }}">{{ .title | markdownify }}</a>
-            </div>
-          </div>
+      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{{range $index, $element := .categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
+        {{ printf "%#v" . }}
+        <div class="position-relative rounded">
+          <a href="{{ .src | safeURL }}" data-toggle="lightbox" data-gallery="example-gallery" class="img-fluid rounded w-100 d-block position-relative rounded hover-wrapper">
+            <img src="{{ .src | safeURL }}" class="img-fluid rounded d-block" alt="{{ .title | markdownify }}">
+          </a>
         </div>
+        
       </div>
       {{ end }}
 
     </div>
 
+
+
+
   </div>
 </section> 
 <!-- /gallery -->
-
 
 {{ end }}

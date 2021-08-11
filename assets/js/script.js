@@ -158,13 +158,16 @@ $(window).on('load', function () {
 		});
 
 		jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
+			var test = document.querySelector('input[name="shuffle-filter]');
 			var input = evt.currentTarget;
 			if (input.checked) {
 				myShuffle.filter(input.value);
 			}
+			
 		});
 	}
 
+	
 
 
 })(jQuery);
