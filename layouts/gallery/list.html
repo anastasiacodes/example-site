@@ -12,14 +12,11 @@
           </label>
 					{{ $categories := slice }}
 					{{ range site.Data.gallery.gallery.item  }}
-          
 					{{ range .categories }}
-          
 					{{ $categories = $categories | append . }}
 					{{ end }}
           {{ end }}
 					{{ range ( $categories | uniq ) }}
-          
           <label class="btn btn-sm btn-primary">
             <input type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ . | humanize }}
           </label>
@@ -30,7 +27,6 @@
     <div class="row shuffle-wrapper">
       {{ range site.Data.gallery.gallery.item }}
       <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{{range $index, $element := .categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
-        {{ printf "%#v" . }}
         <div class="position-relative rounded">
           <a href="{{ .src | safeURL }}" data-toggle="lightbox" data-gallery="example-gallery" class="img-fluid rounded w-100 d-block position-relative rounded hover-wrapper">
             <img src="{{ .src | safeURL }}" class="img-fluid rounded d-block" alt="{{ .title | markdownify }}">
@@ -43,10 +39,10 @@
     </div>
 
 
-
-
   </div>
 </section> 
 <!-- /gallery -->
 
 {{ end }}
+
+

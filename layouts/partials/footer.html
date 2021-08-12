@@ -61,10 +61,7 @@
 <script src="{{ site.Params.map.gmap_api | safeURL }}"></script>
 {{ end }}
 
-{{ "<!-- JS Plugins -->" | safeHTML }}
-{{ range site.Params.plugins.js}}
-<script src="{{ .link | absURL }}"></script>
-{{ end }}
+
 
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}
