@@ -3,18 +3,72 @@
 PROJECT: Project Name
 VERSION: Versoin Number
 -------------------------------------------------------------------*/
-@import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
 
 @font-face {
-  font-family: bwnistaint-xbd;
-  src: url(../fonts/BwNistaInt-xBd.woff) format("woff");
+  font-family: "Antro Vectra";
+  src: url("/fonts/antro_vectra/Antro_Vectra.otf") format("woff");
+}
+
+@font-face {
+  font-family: "Didonesque-Roman";
+  src: url("/fonts/Didonesque-Roman.ttf") format("woff");
+}
+@font-face {
+  font-family: "Nimbus Sans";
+  src: url("/fonts/Nimbus-Sans-D-OT-Ultra-Light_32757.ttf") format("woff");
+}
+
+body [data-font = 'title-1/large'] {
+font-family: 'Antro Vectra';
+font-size: 1.875rem;
+font-weight: 400;
+font-style: normal;
+line-height: 1.2em;
+letter-spacing: 0em;
+text-transform: none;
+}
+body [data-font = 'title-1/small'] {
+  font-family: 'Antro Vectra';
+  font-size: 1.5rem;
+  font-weight: 400;
   font-style: normal;
-  font-display: swap
+  line-height: 1.75em;
+  letter-spacing: 0em;
+  text-transform: none;
+  color: white;
+  padding: 20px;
+  }
+
+body [data-font = 'title-1/medium'] {
+  font-family: 'Antro Vectra';
+  font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2rem;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+body [data-font = 'title-2/medium'] {
+  font-family: Didonesque-Roman;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 1.1em;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  text-transform: none;
+  padding-bottom: 25px;
+}
+
+body [data-font = 'navigation'] {
+  font-family: "Didonesque Roman";
+  letter-spacing: -.5px;
+  padding: 0px .75rem;
+  font-size: 1.25rem;
 }
 
 body {
   line-height: 1.2;
-  font-family: roboto, sans-serif;
+  font-family: "Nimbus Sans",Helvetica,Roboto,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #4c4c4c
@@ -25,7 +79,7 @@ p {
   color: #4c4c4c;
   font-size: 15px;
   line-height: 1.8;
-  font-family: roboto, sans-serif
+  /* font-family: 'Miller', serif */
 }
 
 h1,
@@ -35,7 +89,7 @@ h4,
 h5,
 h6 {
   color: #000;
-  font-family: playfair display, serif;
+  font-family: 'Fira Sans', sans-serif;
   line-height: 1.2
 }
 
@@ -86,13 +140,13 @@ h6,
 }
 
 .btn {
-  font-size: 22px;
-  font-family: playfair display, serif;
+  font-size: 1rem;
+  font-family: 'Nimbus Sans';
   text-transform: capitalize;
-  padding: 16px 44px;
-  border-radius: 5px;
+  padding: 1rem 1.75rem;
+  /* border-radius: 1rem; */
   font-weight: 600;
-  border: 0;
+  border: 1px solid goldenrod;
   position: relative;
   z-index: 1;
   transition: .2s ease
@@ -216,6 +270,56 @@ a:hover {
   outline: 0
 }
 
+/* Navigation */
+
+.navigation {
+  padding: 20px 1rem;
+  transition: .3s ease;
+}
+
+.navigation.nav-bg {
+  background-color: var(--primary-color);
+}
+
+.navbar-expand-lg {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@media(max-width:991px) {
+  .navigation {
+    background: var(--primary-color);
+    height: calc(100% - 88vh);
+  }
+}
+
+.navbar .nav-item.active .nav-link{
+  color: #52f8f4;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* Hero */
+
+.hero-area {
+  position: relative
+}
+
+@media(max-width:991px) {
+  .hero-area {
+    padding: 12vh 0 0;
+    overflow: hidden
+  }
+}
+
+.hero-area ul {
+  margin: 0;
+}
+
+
+
 .section {
   padding-top: 80px;
   padding-bottom: 80px
@@ -223,7 +327,6 @@ a:hover {
 
 .section-title {
   margin-bottom: 80px;
-  font-family: bwnistaint-xbd
 }
 
 .bg-cover {
@@ -332,15 +435,11 @@ a:hover {
 }
 
 .font-primary {
-  font-family: roboto, serif !important
+  font-family: roboto, serif !important;
 }
 
 .font-secondary {
-  font-family: playfair display, serif !important
-}
-
-.font-tertiary {
-  font-family: bwnistaint-xbd !important
+  font-family: 'Nimbus Sans' !important;
 }
 
 .shadow {
@@ -421,59 +520,9 @@ textarea.form-control {
   border: 0
 }
 
-.navigation {
-  padding: 40px 130px;
-  transition: .3s ease
-}
 
-.navigation.nav-bg {
-  background-color: var(--primary-color);
-  padding: 15px 100px
-}
 
-@media(max-width:991px) {
-  .navigation.nav-bg {
-    padding: 15px 20px
-  }
-}
 
-@media(max-width:991px) {
-  .navigation {
-    padding: 20px;
-    background: var(--primary-color)
-  }
-}
-
-.navbar .nav-item .nav-link {
-  font-family: bwnistaint-xbd;
-  text-transform: uppercase;
-  padding: 15px
-}
-
-.navbar .nav-item.active .nav-link{
-  color: #52f8f4;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff;
-}
-
-.hero-area {
-  padding: 250px 0 200px;
-  position: relative
-}
-
-@media(max-width:767px) {
-  .hero-area {
-    padding: 200px 0 150px;
-    overflow: hidden
-  }
-}
-
-.hero-area h1 {
-  position: relative;
-  z-index: 2
-}
 
 .layer {
   position: absolute;
@@ -746,7 +795,7 @@ blockquote {
 }
 
 .content strong {
-  font-family: playfair display, serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 22px;
   font-weight: 400;
   color: #000;
@@ -914,4 +963,45 @@ blockquote {
 
 .project-meta p{
   margin-bottom: 0;
+}
+
+.list-unstyled {
+  display: flex;
+  justify-content: center;
+}
+.mb-3{
+  margin: 1vw;
+}
+
+/* Work section */
+.galleries {
+/* background-color: #15221C; */
+background-color: #323633;
+}
+.galleries h2, .work h4, .work p {
+  color: white;
+}
+
+section .about {
+  background-color: #dce0d2;
+  padding: 50px 20px;
+}
+
+.footer-section {
+  background-color: #2e3f2ebf;
+}
+.footer-section h5, .footer-section p, .footer-section a {
+  color: white;
+}
+
+.footer-section .list-unstyled{
+  justify-content: left;
+}
+
+.mt-0 {
+  margin: 0 1rem 1rem 1rem;
+}
+
+.theme-color a{
+  color: var(--primary-color);
 }

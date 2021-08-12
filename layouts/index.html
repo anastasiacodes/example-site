@@ -1,71 +1,47 @@
 {{ define "main" }}
 
-  <!-- hero area -->
-  <section class="hero-area bg-primary overflow-hidden" id="parallax">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-11 mx-auto">
-          <h1 class="text-white font-tertiary">{{ site.Data.homepage.banner.title | safeHTML }}</h1>
-        </div>
-      </div>
-    </div>
-    <div class="layer-bg w-100">
-      <img class="img-fluid w-100" src="{{`images/illustrations/leaf-bg.png` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l2">
-      <img src="{{`images/illustrations/dots-cyan.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l3">
-      <img src="{{`images/illustrations/leaf-orange.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l4">
-      <img src="{{`images/illustrations/dots-orange.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l5">
-      <img src="{{`images/illustrations/leaf-yellow.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l6">
-      <img src="{{`images/illustrations/leaf-cyan.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l7">
-      <img src="{{`images/illustrations/dots-group-orange.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l8">
-      <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l9">
-      <img src="{{`images/illustrations/leaf-cyan-2.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <!-- social icon -->
-    <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-      {{ range site.Params.social }}
-      <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
-      {{ end }}
-    </ul>
-    <!-- /social icon -->
-  </section>
-  <!-- /hero area -->
+<!-- hero area -->
+<section class="hero-area bg-primary overflow-hidden" id="parallax">
+  <img class="img-fluid w-100" src="{{`https://source.unsplash.com/random/1900x1100` | relURL}}" alt="bg-shape">
+</div>
 
-  {{ if site.Data.homepage.about.enable }}
-  <!-- about -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10 mx-auto text-center">
-          {{ with site.Data.homepage.about }}
-          <p class="font-secondary lead text-dark">{{.content | markdownify}}</p>
-          {{ if .button.enable }}
-          {{ with .button }}
-          <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
-          {{ end }}
-          {{ end }}
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /about -->
+<!-- social icon -->
+<ul class="list-unstyled mt-3 position-relative zindex-1">
+  {{ range site.Params.social }}
+  <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
   {{ end }}
+</ul>
+
+<!-- /social icon -->
+</section>
+<!-- /hero area -->
+
+{{ if site.Data.homepage.about.enable }}
+<!-- about -->
+<section class="section">
+  <div class="about container">
+    <div class="row justify-content-around">
+      <div  class="col-md-5 text-center align-self-center">
+        <h2 data-font="title-1/medium">get to know</h2>
+        <p data-font="title-2/medium">Me and my Work</p>
+      </div>
+      <div class="col-md-5 text-center">
+        {{ with site.Data.homepage.about }}
+        <h3 data-font="title-2/medium">{{.title | markdownify}}</h3>
+        <p class="font-secondary lead text-dark">{{.content | markdownify}}</p>
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
+        {{ end }}
+        {{ end }}
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /about -->
+{{ end }}
 
 
   {{ if site.Data.homepage.skill.enable }}
@@ -234,13 +210,7 @@
         </div>
       </div>
     </div>
-    <!-- bg shapes -->
-    <img src="{{`images/backgrounds/map.png` | relURL }}" alt="map" class="img-fluid bg-map">
-    <img src="{{`images/illustrations/dots-group-v.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-1">
-    <img src="{{`images/illustrations/leaf-orange.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-2">
-    <img src="{{`images/illustrations/dots-group-sm.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-3">
-    <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-4">
-    <img src="{{`images/illustrations/leaf-cyan.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-5">
+   
   </section>
   <!-- /testimonial -->
   {{ end }}
