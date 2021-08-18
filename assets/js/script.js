@@ -98,6 +98,18 @@ $(window).on('load', function () {
 	}
 	/* ########################################### /hero parallax ############################################## */
 
+	// hero-slider
+    $('.hero-slider').slick({
+        // autoplay: true,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 1,
+        prevArrow: '<span class="prev"></span>',
+        nextArrow: '<span class="next"></span>',
+		adaptiveHeight: true,
+    });
+
+
 	// testimonial-slider
 	$('.testimonial-slider').slick({
 		dots: true,

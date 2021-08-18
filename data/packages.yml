@@ -1,0 +1,78 @@
+#packages
+packages :
+  enable : true
+  title : "My Packages"
+  item :
+    
+    - title : Engagement Package
+      sub_title : Big
+      categories : ["engagement"]
+      cost : "$500"
+      feature_1 : "Feature 1"
+      feature_2 : "Feature 2"
+      feature_3 : "Feature 3"
+      feature_4 : "Feature 4"
+      feature_5 : "Feature 5"
+      image : "/images/engagement-gallery/engagement-1-min.jpg"
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+    - title : Engagement Package
+      sub_title : Small
+      categories : ["engagement"]
+      cost : "$300"
+      feature_1 : "Feature 1"
+      feature_2 : "Feature 2"
+      feature_3 : "Feature 3"
+      feature_4 : "Feature 4"
+      feature_5 : "Feature 5"
+      image : "/images/engagement-gallery/engagement-3-min.jpg"
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+    
+    - title : Portrait Package
+      sub_title : Big
+      categories : ["portrait"]
+      cost : "$500"
+      feature_1 : "Feature 1"
+      feature_2 : "Feature 2"
+      feature_3 : "Feature 3"
+      feature_4 : "Feature 4"
+      feature_5 : "Feature 5"
+      image : "/images/portrait-gallery/portrait-2-min.jpg"
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+    - title : Portrait Package
+      sub_title : Small
+      categories : ["portrait"]
+      cost : "$300"
+      feature_1 : "Feature 1"
+      feature_2 : "Feature 2"
+      feature_3 : "Feature 3"
+      feature_4 : "Feature 4"
+      feature_5 : "Feature 5"
+      image : "/images/portrait-gallery/portrait-3-min.jpg"
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+    - title : Lifestyle Package
+      sub_title : Big
+      categories : ["lifestyle"]
+      cost : "$500"
+      feature_1 : "Feature 1"
+      feature_2 : "Feature 2"
+      feature_3 : "Feature 3"
+      feature_4 : "Feature 4"
+      feature_5 : "Feature 5"
+      image : "/images/lifestyle-gallery/lifestyle-1-min.jpg"
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+ 
+    - title : Lifestyle Package
+      sub_title : Small
+      categories : ["lifestyle"]
+      cost : "$300"
+      feature_1 : "Feature 1"
+      feature_2 : "Feature 2"
+      feature_3 : "Feature 3"
+      feature_4 : "Feature 4"
+      feature_5 : "Feature 5"
+      image : "/images/lifestyle-gallery/lifestyle-1-min.jpg"
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."

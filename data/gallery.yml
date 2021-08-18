@@ -7,12 +7,14 @@ gallery:
       src : "/images/engagement-gallery/engagement-1-min.jpg"
       categories: ["engagement"]
       license : "Photography"
+      cover: true
 
     - title : "Engagement 2"
       caption: "This is a caption."
       src : "/images/engagement-gallery/engagement-2-min.jpg"
       categories: ["engagement"]
       license : "Photography"
+
 
     - title : "Engagement 3"
       caption: "This is a caption."
@@ -25,6 +27,7 @@ gallery:
       src : "/images/lifestyle-gallery/lifestyle-1-min.jpg"
       categories: ["lifestyle"]
       license : "Photography"
+      cover: true
 
     - title : "Lifestyle 2"
       caption: "This is a caption."

@@ -1,13 +1,13 @@
 # work process
-work_process:
+photography_process:
   enable : true
-  title : "Work Process"
+  title : "Photography Process"
   item:
-  - title : "Research and Plan"
+  - title : "Snap"
     icon : "images/icons/plan.png"
     content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     
-  - title : "Design and Develop"
+  - title : "Edit"
     icon : "images/icons/design.png"
     content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     
@@ -16,22 +16,25 @@ work_process:
     content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
 
-# team
-team:
+# facts
+facts:
   enable: true
-  title : "My Team"
-  team_member:
-    - title : "Jack Schenziwe"
-      image : "images/team/member-1.png"
-      designation : "Project Manager"
+  title : "Fun Facts About Me"
+  item:
+    - fact : "Fact 1"
+      image : "/images/engagement-gallery/engagement-1-min.jpg"
       
-    - title : "Julias Carlie"
-      image : "images/team/member-2.png"
-      designation : "Web Developer"
-      
-    - title : "John Doe"
-      image : "images/team/member-3.png"
-      designation : "Designer"
+    - fact : "Fact 2"
+      image : "/images/engagement-gallery/engagement-2-min.jpg"
+
+    - fact : "Fact 3"
+      image : "/images/engagement-gallery/engagement-3-min.jpg"
+
+    - fact : "Fact 4"
+      image : "/images/portrait-gallery/portrait-2-min.jpg"
+
+    - fact : "Fact 5"
+      image : "/images/engagement-gallery/engagement-2-min.jpg"
 
 
 # client logo slider

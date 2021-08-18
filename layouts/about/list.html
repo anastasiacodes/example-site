@@ -33,13 +33,13 @@
 <!-- /about -->
 
 <!-- Work Process -->
-{{ if site.Data.about.work_process.enable }}
-{{ with site.Data.about.work_process }}
+{{ if site.Data.about.photography_process.enable }}
+{{ with site.Data.about.photography_process }}
 <section class="section">
   <div class="container">
     <div class="row justify-content-around">
       <div class="col-lg-12 text-center">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
+        <h2 data-font="title-2/medium">{{ .title | markdownify }}</h2>
       </div>
       {{ range .item }}
       <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
@@ -55,44 +55,30 @@
 {{ end }}
 <!-- ./Work Process -->
 
-<!-- team -->
-{{ if site.Data.about.team.enable }}
-{{ with site.Data.about.team }}
-<section class="section bg-cover" data-background="{{`images/backgrounds/team-bg.png`|relURL}}">
+<!-- fun facts -->
+{{ if site.Data.about.facts.enable }}
+<section class="section">
   <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
-      </div>
-      {{ range .team_member }}
-      <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
-        <div class="card text-center">
-          <img src="{{ .image | absURL }}" class="card-img-top">
-          <div class="card-body">
-            <h4 class="card-title">{{.title }}</h4>
-            <p class="text-light font-secondary">{{.designation }}</p>
-          </div>
+    <div class="col-lg-12 text-center">
+      <h2>{{ site.Data.about.facts.title | markdownify }}</h2>
+    </div>
+    <div class="row shuffle-wrapper">
+      {{ $item := site.Data.about.facts.item }}
+      {{ range $item }}
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <h3 class="text-center">{{ .fact| markdownify }}</h3>
+
+        <div class="position-relative rounded">
+          <a href="{{ .image | safeURL }}" data-toggle="lightbox" data-gallery="example-gallery" class="img-fluid rounded w-100 d-block position-relative rounded hover-wrapper">
+            <img src="{{ .image | safeURL }}" class="img-fluid rounded d-block" alt="{{ .title | markdownify }}">
+          </a>
         </div>
       </div>
       {{ end }}
+      {{ end }} 
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
-<!-- /team -->
-
-{{ if site.Data.about.clients_logo_slider.enable }}
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">{{ site.Data.about.clients_logo_slider.title | markdownify }}</h2>
-      </div>
-    </div>
-    {{ partial "client-slider.html" . }}
-  </div>
-</section>
-{{ end }}
+<!-- /fun facts -->
 
 {{ end }}

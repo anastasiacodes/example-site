@@ -273,7 +273,7 @@ a:hover {
 /* Navigation */
 
 .navigation {
-  padding: 20px 1rem;
+  padding: 0 1rem;
   transition: .3s ease;
 }
 
@@ -289,7 +289,7 @@ a:hover {
 @media(max-width:991px) {
   .navigation {
     background: var(--primary-color);
-    height: calc(100% - 88vh);
+    /* height: calc(100% - 88vh); */
   }
 }
 
@@ -304,19 +304,62 @@ a:hover {
 /* Hero */
 
 .hero-area {
-  position: relative
+  /* position: relative */
 }
+/* @media only screen and (min-width: 800px) {
+  .hero-desktop{
+    display: block;
+  }
+  .hero-mobile{
+    display: hidden;
+  } 
+} */
 
-@media(max-width:991px) {
+@media only screen and (max-width: 799px) {
+  /* .hero-mobile{
+    display: block;
+  }
+  .hero-desktop{
+    display: none !important;
+  }  */
+}
+/* @media(max-width:991px) {
   .hero-area {
     padding: 12vh 0 0;
     overflow: hidden
   }
-}
+} */
 
 .hero-area ul {
   margin: 0;
 }
+
+.prev {
+  position: absolute;
+  display: inline;
+  top: 50%;
+  z-index: 5000;
+  background-image: url('/images/angle-left-solid.svg');
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+
+}
+.next {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  z-index: 5000;
+  background-image: url('/images/angle-right-solid.svg');
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+
 
 
 
@@ -751,10 +794,6 @@ textarea.form-control {
   padding-top: 200px
 }
 
-.section-on-footer {
-  margin-bottom: -250px
-}
-
 .shadow-down {
   position: relative
 }
@@ -784,8 +823,8 @@ textarea.form-control {
 blockquote {
   display: inline-block;
   padding: 10px 20px;
-  background: #eaeaea;
-  border-left: 2px solid var(--primary-color);
+  /* background: #eaeaea; */
+  /* border-left: 2px solid var(--primary-color); */
   font-style: italic;
   font-size: 22px
 }
@@ -1004,4 +1043,9 @@ section .about {
 
 .theme-color a{
   color: var(--primary-color);
+}
+
+
+div:nth-child(even) .swap{
+  flex-direction: row-reverse;
 }
