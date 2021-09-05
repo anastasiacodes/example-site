@@ -2,11 +2,9 @@
 
 <!-- hero area -->
 <section class="hero-area overflow-hidden">
-  <!-- <img class="img-fluid w-100" src="{{`https://source.unsplash.com/random/1900x1100` | relURL}}" alt="bg-shape"> -->
   <div class="hero-slider">
     {{ range site.Data.homepage.hero_slider.item }}
       <img class="hero-desktop" src="{{.image | absURL}}" alt="{{ .title | markdownify }}">
-      <!-- <img class="hero-mobile" src="{{.mobile_image | absURL}}" alt="{{ .title | markdownify }}"> -->
     {{ end }}
   </div>
   
@@ -18,7 +16,6 @@
   <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
   {{ end }}
 </ul>
-
 <!-- /social icon -->
 </section>
 <!-- /hero area -->
@@ -58,19 +55,19 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">{{ site.Data.homepage.work.title | markdownify }}</h2>
+          <h2 class="text-white">{{ site.Data.homepage.work.title | markdownify }}</h2>
         </div>
       </div>
       <div class="row shuffle-wrapper">
         {{ $item:= site.Data.homepage.work.item }}
         {{ range $item }}
         <div class="col-lg-4 col-6 mb-4 shuffle-item">
-          <h3 class="text-center">{{.title}}</h3>
-          <div class="position-relative rounded hover-wrapper">
+          <h3 class="text-center text-white">{{.title}}</h3>
+          <div class="position-relative rounded hover-wrapper border">
             <img src="{{.image | absURL }}" alt="gallery-image" class="img-fluid rounded w-100 d-block">
             <div class="hover-overlay">
               <div class="hover-content">
-                <a class="btn btn-light btn-sm" href="{{ .Permalink | safeURL }}">view gallery</a>
+                <a class="btn btn-light" href="{{ .Permalink | safeURL }}">view gallery</a>
               </div>
             </div>
           </div>
@@ -80,7 +77,7 @@
 
       </div>
       <div class="col-12 text-center">
-        <a class="btn btn-light btn-sm" href="/gallery">View All Work</a>
+        <a class="btn btn-light" href="/gallery">View All Work</a>
       </div>
     </div>
 
@@ -95,7 +92,7 @@
   <div class="container">
     <div class="row justify-content-around">
       <div class="col-lg-12 text-center">
-        <h2 data-font="title-2/medium">{{ .title | markdownify }}</h2>
+        <h2>{{ .title | markdownify }}</h2>
       </div>
       {{ range .item }}
       <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
@@ -113,15 +110,14 @@
 
 
 <!-- packages -->
-<section class="section pb-0 bg-primary">
+<!-- <section class="section pb-0 bg-primary">
   <div class="container">
     <div class="row justify-content-around">
       <div class="col-lg-12 text-center">
-        <h2 data-font="title-2/medium">My Packages</h2>
+        <h2 class="text-white">My Packages</h2>
       </div>
       {{ if site.Data.packages.packages.enable }}
       {{ with site.Data.packages.packages }}
-        <!-- <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3  "> -->
           <div class="row hover-shadow ">
             {{ range .item }}
             <div class="col-lg-6 text-center hover-shadow border-thick bg-gray">
@@ -146,7 +142,7 @@
 
     </div>
   </div>
-</section>
+</section> -->
 <!-- /packages -->
 
 

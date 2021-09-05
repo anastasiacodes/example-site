@@ -1,18 +1,14 @@
-# banner
-banner:
-  title : "Hi! I’m <br> Christoher <br> UX designer"
 
 hero_slider:
   item:
     - image: "/images/heros/hero-1.jpg"
-      mobile_image: "/images/heros/hero-1-mobile.jpg"
       title: "Hero 1"
 
     - image: "/images/heros/hero-2.jpg"
-      title: "Hero 1"
+      title: "Hero 2"
 
     - image: "/images/heros/hero-3.jpg"
-      title: "Hero 1"
+      title: "Hero 3" 
 
 # about
 about:
