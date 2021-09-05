@@ -4,7 +4,7 @@
 <section class="hero-area overflow-hidden">
   <div class="hero-slider">
     {{ range site.Data.homepage.hero_slider.item }}
-      <img class="hero-desktop" src="{{.image | absURL}}" alt="{{ .title | markdownify }}">
+      <img class="hero-desktop" data-background="{{.image | absURL}}">
     {{ end }}
   </div>
   

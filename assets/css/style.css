@@ -260,8 +260,15 @@ a:hover {
 .navigation {
   padding: 0 1rem;
   transition: .3s ease;
+  height: 70px;
+}
+.navbar {
+  align-items: baseline;
 }
 
+.navbar-brand h1{
+  margin: 0;
+}
 .navigation.nav-bg {
   background-color: var(--primary-color);
 }
@@ -294,35 +301,85 @@ a:hover {
 .hero-area ul {
   margin: 0;
 }
-/* .hero-slider{
-  padding: 100px;
-} */
+
+.hero-desktop {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 47vh;
+  min-height: 200px;
+}
+
+@media(max-width:1024px) {
+  .hero-desktop {
+    padding: 30vh;
+  }
+}
+@media(max-width:992px) {
+  .hero-desktop {
+    padding: 30vh;
+  }
+}
+@media(max-width:760px) {
+  .hero-desktop {
+    padding: 23vh;
+  }
+}
+@media(max-width:400px) {
+  .hero-desktop {
+    padding: 18vh;
+  }
+}
 
 .prev {
   position: absolute;
   content: url('/images/angle-left-solid.svg');
-  top: 50%;
+  top: calc(36vh + 3%);
   z-index: 5000;
-  margin-left: .25rem;
-  width: 15px;
-  padding: 20px 0;
+  max-width: 150px;
+  max-height: 150px;
+  padding: 3%;
 }
 .next {
   position: absolute;
   content: url('/images/angle-right-solid.svg');
-  top: 50%;
-  left: 94%;
+  top: calc(36vh + 3%);
+  right: 0;
   z-index: 5000;
-  margin-right: .25rem;
-  width: 15px;
-  padding: 20px 0;
+  max-width: 150px;
+  max-height: 150px;
+  padding: 3%;
 } 
-@media(min-width:991px) {
-  .next {
-    margin-left: 1rem;
+@media(max-width:1024px) {
+  .prev, .next{
+    top: calc(25vh + 3%);
+    padding: 3%;
+    max-width: 90px;
+    max-height: 150px;
   }
-  .next {
-    margin-right: 1rem;
+}
+@media(max-width:992px) {
+  .prev, .next{
+    top: calc(25vh + 3%);
+    padding: 3%;
+    max-width: 70px;
+    max-height: 150px;
+  }
+}
+@media(max-width:760px) {
+  .prev, .next{
+    top: calc(21.5vh + 3%);
+    padding: 3%;
+    max-width: 55px;
+    max-height: 100px;
+  }
+}
+@media(max-width:400px) {
+  .prev, .next{
+    top: calc(19vh + 3%);
+    padding: 3%;
+    max-width: 50px;
+    max-height: 50px;
   }
 }
 

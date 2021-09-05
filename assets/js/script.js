@@ -44,6 +44,7 @@ $(window).on('load', function () {
         slidesToShow: 1,
         prevArrow: '<a class="prev"></a>',
         nextArrow: '<a class="next"></a>',
+		mobileFirst: true,
 		adaptiveHeight: true,
     });
 
