@@ -16,7 +16,7 @@ about:
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
   button:
     enable : true
-    label : "know more"
+    label : "Learn More"
     URL : "about"
 
 # skill
@@ -97,12 +97,21 @@ work:
   item : 
     - title: "Engagement"
       image: "/images/engagement-gallery/engagement-1-min.jpg"
+      button:
+        enable : true
+        URL : "/gallery/#engagement"
     
     - title: "Lifestyle"
       image: "/images/lifestyle-gallery/lifestyle-1-min.jpg"
+      button:
+        enable : true
+        URL : "/gallery/#lifestyle"
 
     - title: "Portrait"
       image: "/images/portrait-gallery/portrait-2-min.jpg"
+      button:
+        enable : true
+        URL : "/gallery/#portrait"
 
 
 # testimonial

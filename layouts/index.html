@@ -13,7 +13,7 @@
 <!-- social icon -->
 <ul class=" bg-primary list-unstyled position-relative zindex-1">
   {{ range site.Params.social }}
-  <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
+  <li class="mb-3 my-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
   {{ end }}
 </ul>
 <!-- /social icon -->
@@ -67,7 +67,11 @@
             <img src="{{.image | absURL }}" alt="gallery-image" class="img-fluid rounded w-100 d-block">
             <div class="hover-overlay">
               <div class="hover-content">
-                <a class="btn btn-light" href="{{ .Permalink | safeURL }}">view gallery</a>
+                {{ if .button.enable }}
+                {{ with .button }}
+                <a href="{{ .URL | absURL }}" class="btn btn-light">view gallery</a>
+                {{ end }}
+                {{ end }}
               </div>
             </div>
           </div>
