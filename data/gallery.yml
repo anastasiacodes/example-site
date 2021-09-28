@@ -14,13 +14,31 @@ gallery:
       categories: ["engagement"]
       license : "Photography"
 
-
     - title : "Engagement 3"
       caption: "This is a caption."
       src : "/images/engagement-gallery/engagement-3-min.jpg"
       categories: ["engagement"]
       license : "Photography"
-      
+     
+    - title : "Portrait 1"
+      caption: "This is a caption."
+      src : "/images/portrait-gallery/portrait-1-min.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+
+    - title : "Portrait 2"
+      caption: "This is a caption."
+      src : "/images/portrait-gallery/portrait-2-min.jpg"
+      URL : "http://examplesite.com"
+      categories: ["portrait"]
+      license : "Photography"
+
+    - title : "Portrait 3"
+      caption: "This is a caption."
+      src : "/images/portrait-gallery/portrait-3-min.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+
     - title : "Lifestyle 1"
       caption: "This is a caption."
       src : "/images/lifestyle-gallery/lifestyle-1-min.jpg"

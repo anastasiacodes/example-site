@@ -2,14 +2,25 @@
 
 {{ partial "page-title.html" . }}
 
+<section class="section pb-0">
+  <div class="container">
+    <div class="row"> 
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
 {{ if site.Params.map.enable }}
 <section class="section pb-0">
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Find me on Google Map</h2>
+      <div class="col-5">
+        <h2>Let's Meet Up</h2>
+        <h3>City, State</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
       </div>
-      <div class="col-12">
+      <div class="col-7">
         {{ with site.Params.map }}
         {{"<!-- Google Map -->" | safeHTML}}
         <div class="shadow" id="map" data-latitude="{{ .map_latitude }}" data-longitude="{{ .map_longitude }}"
@@ -20,22 +31,5 @@
   </div>
 </section>
 {{ end }}
-
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Follow me on Social</h2>
-      </div>
-      <div class="col-12">
-        <ul class="list-inline social-icons text-center">
-          {{ range site.Params.social }}
-          <li class="list-inline-item"><a href="{{.URL}}"><i class="{{.icon}}"></i></a></li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
 {{ end }}

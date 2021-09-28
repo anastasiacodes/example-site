@@ -92,7 +92,7 @@ portfolio:
   # work
 work:
   enable : true
-  title : "My Work"
+  title : "Galleries"
   button : "View all Galleries"
   item : 
     - title: "Engagement"

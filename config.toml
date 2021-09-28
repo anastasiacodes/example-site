@@ -84,16 +84,12 @@ weight = 1
 [params]
 home = "Home"
 logo = ""
-# theme color
-# theme_color = "#2e3f2ebf"
-# theme_color = "#171E1C"
-theme_color = "#3D3F25"
 # contact info
 phone = "123 456 7891"
 email = "example-email@email.com"
 address = "Huntington, WV"
 # meta description
-author = "Johnathan Smith"
+author = "Jen Rivers"
 description = "This is meta description"
 # google analytics
 google_analytics_id = "" # Your ID

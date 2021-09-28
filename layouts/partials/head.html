@@ -8,12 +8,6 @@
   {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
 
-  <style>
-    :root{
-      --primary-color:{{ site.Params.theme_color }};
-    }
-  </style>
-
   {{ "<!-- plugins -->" | safeHTML }}
   {{ range site.Params.plugins.css }}
   <link rel="stylesheet" href="{{ .link | absURL }} ">

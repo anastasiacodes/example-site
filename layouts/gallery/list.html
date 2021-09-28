@@ -8,9 +8,7 @@
       <div class="col-12">
         <div class="btn-group btn-group-toggle justify-content-center d-flex flex-wrap" data-toggle="buttons">
           <label class="btn btn-sm btn-primary active">
-            <a href="">
-              <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
-            </a>
+              <input type="radio" onclick="location.href='/gallery'" name="shuffle-filter" value="all" checked="checked" />All
           </label>
 					{{ $categories := slice }}
 					{{ range site.Data.gallery.gallery.item  }}
@@ -20,9 +18,7 @@
           {{ end }}
 					{{ range ( $categories | uniq ) }}
           <label id="{{ . | urlize }}" class="btn btn-sm btn-primary">
-            <a href="#{{ . | urlize }}">
-            <input type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ . | humanize }}
-          </a>
+            <input type="radio" name="shuffle-filter" onclick="location.href='/gallery/#{{ . | urlize }}';" value="{{ . | urlize }}" />{{ . | humanize }}
           </label>
           {{ end }}
         </div>
@@ -36,7 +32,6 @@
             <img src="{{ .src | safeURL }}" class="img-fluid rounded d-block" alt="{{ .title | markdownify }}">
           </a>
         </div>
-        
       </div>
       {{ end }}
 

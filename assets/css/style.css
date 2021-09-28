@@ -4,6 +4,14 @@ PROJECT: Project Name
 VERSION: Versoin Number
 -------------------------------------------------------------------*/
 
+:root{
+  --primary-color: linear-gradient(
+    96deg,rgba(7,12,8,1) 0%,rgba(15,24,19,1) 18%,rgba(21,34,28,1) 43%,rgba(35,46,41,1) 64%,rgba(41,48,45,1) 84%,rgba(36,41,39,1) 100%);
+  --secondary-green: #dce0d2; 
+    --gold-color: #D4AF37;
+  }
+
+
 @font-face {
   font-family: "Antro Vectra";
   src: url("/fonts/antro_vectra/Antro_Vectra.otf") format("woff");
@@ -142,7 +150,7 @@ h6,
   text-transform: capitalize;
   padding: 10px 30px;
   font-weight: 600;
-  border: 1px solid #d4af37;
+  border: 1px solid var(--gold-color);
   position: relative;
   z-index: 1;
   transition: .2s ease
@@ -290,7 +298,7 @@ a:hover {
 }
 
 .navbar .nav-item.active .nav-link{
-  color: #d4af37;
+  color: var(--gold-color);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -662,10 +670,26 @@ blockquote {
 }
 
 .page-title-alt {
-  padding: 350px 0 70px
+  padding: 350px 0 70px;
+  background: var(--primary-color);
+  position: relative;
 }
+.page-title-alt::after {
+  content: '';
+  position: absolute;
+  background-image: url('/images/background-1.jpg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.15;
+} 
+
 .border {
-  border: .25px solid #d4af37 !important;
+  border: .25px solid var(--gold-color) !important;
 }
 
 .border-thick {
@@ -753,12 +777,13 @@ background-color: #323633;
 }
 
 section .about {
-  background-color: #dce0d2;
+  background-color: var(--secondary-green);
   padding: 50px 20px;
 }
 
 .footer-section {
   background-color: #2e3f2ebf;
+  border-top: 1px solid var(--gold-color);
 }
 
 .footer-section .list-unstyled{
