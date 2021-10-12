@@ -3,11 +3,11 @@
 
 {{ if site.Params.contact.enable }}
 <!-- contact -->
-<section class="section" data-background="{{`/images/contact-form-bkg.jpg` | absURL}}">
+<section class="section contact-form-bkg" data-background="{{`/images/contact-form-bkg.jpg` | absURL}}">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title text-white">Contact Info</h2>
+        <h2 class="section-title text-white">Get in Touch</h2>
         <!-- social icon -->
         <ul class="list-unstyled position-relative zindex-1">
         {{ range site.Params.social }}
@@ -19,6 +19,7 @@
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
           <h4 class="mb-80">Contact Form</h4>
+          <p>I’m here for you- whether you’re ready to book, have questions, or want to discuss your needs. I would love to hear from you and get to know you. Fill out the form below to let me know what you need!</p>
           <form action="{{site.Params.contact.form_action}}" method="POST" class="row">
             <div class="col-md-6">
               <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
@@ -72,7 +73,6 @@
         </div>
         <div class="col-md-4">
           <p class="text-white paragraph-lg font-secondary">{{site.Params.email}}</p>
-          <p class="text-white paragraph-lg font-secondary">{{site.Params.phone}}</p>
           <p class="text-white paragraph-lg font-secondary">{{site.Params.address}}</p>
         </div>
       </div>

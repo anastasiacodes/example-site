@@ -6,8 +6,8 @@ author_signature : "images/about/signature.png"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Oh Hello! I’m Nichole Steffey, creator and photographer of Lock and Shutter Photography. I’m a believer in doing what makes your soul happy, that’s why I started a career in photography. My passion is telling stories, capturing moments that will live forever, and having the freedom to be creative.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+I define my photography style as exclusive to showcasing an individual’s beauty and authenticity. Nature is my canvas. I love the great outdoors and the beauty it has to offer – and there’s not a more beautiful canvas than Wild and Wonderful West Virginia.
 
-Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
+Although I’m based out of Huntington, WV, I’m always ready for an adventure and am eager to explore.

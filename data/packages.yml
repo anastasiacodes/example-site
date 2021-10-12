@@ -5,74 +5,57 @@ packages :
   item :
     
     - title : Engagement Package
-      sub_title : Big
+      sub_title : The All-inclusive
       categories : ["engagement"]
-      cost : "$500"
-      feature_1 : "Feature 1"
-      feature_2 : "Feature 2"
-      feature_3 : "Feature 3"
-      feature_4 : "Feature 4"
-      feature_5 : "Feature 5"
+      cost : "$175"
+      feature_1 : "60 mins"
+      feature_2 : "13-15 downloadable edits"
       image : "/images/engagement-gallery/engagement-1-min.jpg"
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      description: "Your engagement session can take place somewhere special or unique to you, or if you have something else in mind, we can discuss location and find the perfect spot together."
 
     - title : Engagement Package
-      sub_title : Small
+      sub_title : The Mini-Package
       categories : ["engagement"]
-      cost : "$300"
-      feature_1 : "Feature 1"
-      feature_2 : "Feature 2"
-      feature_3 : "Feature 3"
-      feature_4 : "Feature 4"
-      feature_5 : "Feature 5"
+      cost : "$125"
+      feature_1 : "30 mins"
+      feature_2 : "6-8 downloadable edits"
       image : "/images/engagement-gallery/engagement-3-min.jpg"
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
     
     - title : Portrait Package
-      sub_title : Big
+      sub_title : The All-inclusive
       categories : ["portrait"]
-      cost : "$500"
-      feature_1 : "Feature 1"
-      feature_2 : "Feature 2"
-      feature_3 : "Feature 3"
-      feature_4 : "Feature 4"
-      feature_5 : "Feature 5"
-      image : "/images/portrait-gallery/portrait-2-min.jpg"
+      cost : "$175"
+      feature_1 : "60 mins"
+      feature_2 : "13-15 downloadable edits"
+      image : "/images/engagement-gallery/engagement-1-min.jpg"
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
+
     - title : Portrait Package
-      sub_title : Small
+      sub_title : The Mini-Package
       categories : ["portrait"]
-      cost : "$300"
-      feature_1 : "Feature 1"
-      feature_2 : "Feature 2"
-      feature_3 : "Feature 3"
-      feature_4 : "Feature 4"
-      feature_5 : "Feature 5"
-      image : "/images/portrait-gallery/portrait-3-min.jpg"
+      cost : "$125"
+      feature_1 : "30 mins"
+      feature_2 : "6-8 downloadable edits"
+      image : "/images/engagement-gallery/engagement-3-min.jpg"
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
     - title : Lifestyle Package
-      sub_title : Big
+      sub_title : The All-inclusive
       categories : ["lifestyle"]
-      cost : "$500"
-      feature_1 : "Feature 1"
-      feature_2 : "Feature 2"
-      feature_3 : "Feature 3"
-      feature_4 : "Feature 4"
-      feature_5 : "Feature 5"
-      image : "/images/lifestyle-gallery/lifestyle-1-min.jpg"
+      cost : "$175"
+      feature_1 : "60 mins"
+      feature_2 : "13-15 downloadable edits"
+      image : "/images/engagement-gallery/engagement-1-min.jpg"
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
  
     - title : Lifestyle Package
-      sub_title : Small
+      sub_title : The Mini-Package
       categories : ["lifestyle"]
-      cost : "$300"
-      feature_1 : "Feature 1"
-      feature_2 : "Feature 2"
-      feature_3 : "Feature 3"
-      feature_4 : "Feature 4"
-      feature_5 : "Feature 5"
-      image : "/images/lifestyle-gallery/lifestyle-1-min.jpg"
+      cost : "$125"
+      feature_1 : "30 mins"
+      feature_2 : "6-8 downloadable edits"
+      image : "/images/engagement-gallery/engagement-3-min.jpg"
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."

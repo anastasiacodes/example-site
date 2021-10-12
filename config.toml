@@ -85,11 +85,10 @@ weight = 1
 home = "Home"
 logo = ""
 # contact info
-phone = "123 456 7891"
-email = "example-email@email.com"
+email = "lockandshutterphotography@outlook.com"
 address = "Huntington, WV"
 # meta description
-author = "Jen Rivers"
+author = "Nichole Steffey"
 description = "This is meta description"
 # google analytics
 google_analytics_id = "" # Your ID

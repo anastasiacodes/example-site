@@ -6,8 +6,8 @@ author_signature : "images/about/signature.png"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ I offer an array of photography packages to showcase your authentic beauty.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+ See the options below to find the perfect fit. Have something  else in mind? I embrace the unordinary! Allow me to help your vision come to life with a custom session that is unique to your creativity and needs. From chic boudoir, to squishy newborns, and everything in between, I’m invested in capturing your vision. 
 
-Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
+Contact me with your request and we can discuss your custom session, the process and price.     

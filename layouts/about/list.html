@@ -29,7 +29,8 @@
   <div class="container">
     <div class="row justify-content-around">
       <div class="col-lg-12 text-center">
-        <h2>{{ .title | markdownify }}</h2>
+        <h2>Photography Process</h2>
+        <!-- <h2>{{ .title | markdownify }}</h2> -->
       </div>
       {{ range .item }}
       <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
@@ -47,7 +48,7 @@
 
 <!-- fun facts -->
 {{ if site.Data.about.facts.enable }}
-<section class="section">
+<section class="section facts">
   <div class="container">
     <div class="col-lg-12 text-center">
       <h2>{{ site.Data.about.facts.title | markdownify }}</h2>
@@ -56,13 +57,13 @@
       {{ $item := site.Data.about.facts.item }}
       {{ range $item }}
       <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <h3 class="text-center">{{ .fact| markdownify }}</h3>
 
         <div class="position-relative rounded">
-          <a href="{{ .image | safeURL }}" data-toggle="lightbox" data-gallery="example-gallery" class="img-fluid rounded w-100 d-block position-relative rounded hover-wrapper">
             <img src="{{ .image | safeURL }}" class="img-fluid rounded d-block" alt="{{ .title | markdownify }}">
-          </a>
-        </div>
+            <div class="caption-container">
+              <h5 class="text-center text-white">{{ .fact| markdownify }}</h5>
+            </div>
+          </div>
       </div>
       {{ end }}
       {{ end }} 

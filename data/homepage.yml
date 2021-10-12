@@ -1,166 +1,72 @@
 
 hero_slider:
   item:
-    - image: "/images/heros/hero-1.jpg"
+    - image: "/images/placeholder-image.png"
       title: "Hero 1"
 
-    - image: "/images/heros/hero-2.jpg"
+    - image: "/images/placeholder-image.png"
       title: "Hero 2"
 
-    - image: "/images/heros/hero-3.jpg"
+    - image: "/images/placeholder-image.png"
       title: "Hero 3" 
 
 # about
 about:
   enable : true
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  content : "I’m Nichole Steffey, creator of Lock and Shutter Photography. I have a passion for capturing life’s moments and turning those moments into lasting shareable stories for others. I would love to get to know you and tell your story. Let’s work together!"
   button:
     enable : true
     label : "Learn More"
     URL : "about"
 
-# skill
-skill:
-  enable : false
-  title : "Skills"
-  item:
-    - title : "Web Design"
-      progress : "90%"
-      color : "#fdb157"
-      
-    - title : "Logo Design"
-      progress : "60%"
-      color : "#9473e6"
-      
-    - title : "After Effects"
-      progress : "80%"
-      color : "#bdecf6"
-      
-    - title : "Web App"
-      progress : "70%"
-      color : "#ffbcaa"
-
-# experience
-experience:
-  enable : false
-  title : "Experience"
-  item: 
-    - logo : "images/experience/icon-1.png"
-      title : "Junior UX Designer"
-      company : "WEBEX"
-      duration : "Jan 2007 - Feb 2009"
-      
-    - logo : "images/experience/icon-2.png"
-      title : "UX & UI Designer"
-      company : "AUGMEDIX"
-      duration : "Mar 2009 - Aug 2014"
-      
-    - logo : "images/experience/icon-1.png"
-      title : "Senior UI Designer"
-      company : "THEMEFISHER"
-      duration : "Sep 2014 - Present"
-
-# education
-education:
-  enable : false
-  title : "Education"
-  item:
-    - title : "Marters in UX Design"
-      year : "2006"
-      academy : "Masassusets Institute of Technology"
-      
-    - title : "Honours in Fine Arts"
-      year : "2004"
-      academy : "Harvard University"
-      
-    - title : "Higher Secondary Certificat"
-      year : "2000"
-      academy : "Cardiff School"
-      
-    - title : "Secondary School Certificate"
-      year : "1998"
-      academy : "Cardiff School"
-
-
-# portfolio
-portfolio:
-  enable : false
-  title : "Portfolio"
-  item_show : 5
-  # portfolio item comes from 'data/portfolio.yml' item.
 
   # work
 work:
   enable : true
   title : "Galleries"
-  button : "View all Galleries"
+  button : "See all Galleries"
   item : 
     - title: "Engagement"
-      image: "/images/engagement-gallery/engagement-1-min.jpg"
+      image: "/images/homepage-showcase-gallery/showcase-engagement.jpg"
       button:
         enable : true
         URL : "/gallery/#engagement"
-    
-    - title: "Lifestyle"
-      image: "/images/lifestyle-gallery/lifestyle-1-min.jpg"
-      button:
-        enable : true
-        URL : "/gallery/#lifestyle"
 
     - title: "Portrait"
-      image: "/images/portrait-gallery/portrait-2-min.jpg"
+      image: "/images/homepage-showcase-gallery/showcase-portrait.jpg"
       button:
         enable : true
         URL : "/gallery/#portrait"
 
-
-# testimonial
-testimonial:
-  enable : false
-  title : "Testimonials"
-  item:
-    - name : "Jesica Gomez"
-      image : "images/testimonial/client-1.png"
-      designation : "CEO, Funder"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      
-    - name : "Shirley Scot"
-      image : "images/testimonial/client-1.png"
-      designation : "CEO, Funder"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      
-    - name : "Jessica Julie"
-      image : "images/testimonial/client-1.png"
-      designation : "CEO, Funder"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    - title: "Lifestyle"
+      image: "/images/homepage-showcase-gallery/showcase-lifestyle.jpg"
+      button:
+        enable : true
+        URL : "/gallery/#lifestyle"
 
 # Showroom slider
 showroom_slider:
   enable : true
   item:
-    - logo : "images/portrait-gallery/portrait-3-min.jpg"
+    - logo : "images/portrait-gallery/portrait-4-min.jpg"
       URL : "http://examplesite.com"
       
     - logo : "images/portrait-gallery/portrait-4-min.jpg"
       URL : "#"
       
-    - logo : "images/rock-climbing-gallery/rock-climbing-2-min.jpg"
-      URL : "http://examplesite.com"
-      
-    - logo : "images/rock-climbing-gallery/rock-climbing-4-min.jpg"
-      URL : "#"
-      
-    - logo : "/images/pet-gallery/pets-1.jpg"
-      URL : "http://examplesite.com"
-      
-    - logo : "/images/pet-gallery/pets-3-min.jpg"
-      URL : "#"
-      
-    - logo : "/images/pet-gallery/pets-2.jpg"
-      URL : "http://examplesite.com"
-      
-    - logo : "/images/pet-gallery/pets-4-min.jpg"
-      URL : "#"
-      
     - logo : "images/portrait-gallery/portrait-4-min.jpg"
       URL : "http://examplesite.com"
+      
+    - logo : "images/portrait-gallery/portrait-4-min.jpg"
+      URL : "#"
+
+    - logo : "images/portrait-gallery/portrait-4-min.jpg"
+      URL : "http://examplesite.com"
+      
+    - logo : "images/portrait-gallery/portrait-4-min.jpg"
+      URL : "#"      
+
+      
+  
+
+      

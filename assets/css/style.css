@@ -790,6 +790,12 @@ section .about {
   justify-content: left;
 }
 
+[data-background] {
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
 .mt-0 {
   margin: 0 1rem 1rem 1rem;
 }
@@ -801,4 +807,26 @@ section .about {
 
 div:nth-child(even) .swap{
   flex-direction: row-reverse;
+}
+
+.facts img {
+  position: relative;
+}
+.facts .caption-container {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  margin: auto;
+  background: rgba(7,12,8,1);
+  opacity: .75;
+  padding: 15px 10px;
+}
+.facts h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 800;
+  font-size: 1.25rem;
 }

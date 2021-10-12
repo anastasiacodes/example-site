@@ -4,16 +4,16 @@ photography_process:
   title : "Photography Process"
   item:
   - title : "Snap"
-    icon : "images/icons/plan.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    icon : "images/icons/snap-icon.svg"
+    content : "On the day of your session I'll snap A LOT of photos."
     
   - title : "Edit"
-    icon : "images/icons/design.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    icon : "images/icons/edit-icon.svg"
+    content : "I choose the best raw photos and edit them to provide you with high resolution photos."
     
   - title : "Deliver"
-    icon : "images/icons/print.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    icon : "images/icons/deliver-icon.svg"
+    content : "After 2-3 weeks, you will recieve your photos through a Google photos album where you can download them."
 
 
 # facts
@@ -21,21 +21,26 @@ facts:
   enable: true
   title : "Fun Facts About Me"
   item:
-    - fact : "Fact 1"
-      image : "/images/engagement-gallery/engagement-1-min.jpg"
+    - fact : "I have two furbaby pups that I treat like real human children – yep, I’m one of those people"
+      image : "/images/placeholder-image-long.png"
       
-    - fact : "Fact 2"
-      image : "/images/engagement-gallery/engagement-2-min.jpg"
+    - fact : "I have a sweet tooth, 28 to be exact."
+      image : "/images/placeholder-image-long.png"
 
-    - fact : "Fact 3"
-      image : "/images/engagement-gallery/engagement-3-min.jpg"
+    - fact : "A quirky sense of humor. See other facts for example"
+      image : "/images/placeholder-image-long.png"
 
-    - fact : "Fact 4"
-      image : "/images/portrait-gallery/portrait-2-min.jpg"
+    - fact : "Married to my high school redheaded beauty"
+      image : "/images/placeholder-image-long.png"
 
-    - fact : "Fact 5"
-      image : "/images/engagement-gallery/engagement-2-min.jpg"
+    - fact : "Board games are my jam – except Monopoly, I’ve NEVER won!"
+      image : "/images/placeholder-image.png"
 
+    - fact : "I’m an old soul with a young heart"
+      image : "/images/placeholder-image-long.png"
+
+    - fact : "A lover of adventure, smooth bourbon, rock music, good vibes, good times and good people"
+      image : "/images/placeholder-image-long.png"
 
 # client logo slider
 clients_logo_slider:

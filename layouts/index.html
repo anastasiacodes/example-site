@@ -4,7 +4,7 @@
 <section class="hero-area overflow-hidden">
   <div class="hero-slider">
     {{ range site.Data.homepage.hero_slider.item }}
-      <img class="hero-desktop" data-background="{{.image | absURL}}">
+        <img class="hero-desktop" data-background="{{.image | absURL}}">
     {{ end }}
   </div>
   
@@ -69,7 +69,7 @@
               <div class="hover-content">
                 {{ if .button.enable }}
                 {{ with .button }}
-                <a href="{{ .URL | absURL }}" class="btn btn-light">view gallery</a>
+                <a href="{{ .URL | absURL }}" class="btn btn-light">see gallery</a>
                 {{ end }}
                 {{ end }}
               </div>
@@ -81,7 +81,7 @@
 
       </div>
       <div class="col-12 text-center">
-        <a class="btn btn-light" href="/gallery">View All Work</a>
+        <a class="btn btn-light" href="/gallery">See All Work</a>
       </div>
     </div>
 
