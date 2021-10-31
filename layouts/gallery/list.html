@@ -8,7 +8,7 @@
       <div class="col-12">
         <div class="btn-group btn-group-toggle justify-content-center d-flex flex-wrap" data-toggle="buttons">
           <label class="btn btn-sm btn-primary active">
-              <input type="radio" onclick="location.href='/gallery'" name="shuffle-filter" value="all" checked="checked" />All
+              <input type="radio" name="shuffle-filter" value="all"/>All
           </label>
 					{{ $categories := slice }}
 					{{ range site.Data.gallery.gallery.item  }}
@@ -18,7 +18,7 @@
           {{ end }}
 					{{ range ( $categories | uniq ) }}
           <label id="{{ . | urlize }}" class="btn btn-sm btn-primary">
-            <input type="radio" name="shuffle-filter" onclick="location.href='/gallery/#{{ . | urlize }}';" value="{{ . | urlize }}" />{{ . | humanize }}
+            <input type="radio" name="shuffle-filter"  value="{{ . | urlize }}" />{{ . | humanize }}
           </label>
           {{ end }}
         </div>

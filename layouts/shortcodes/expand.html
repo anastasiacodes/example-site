@@ -1,0 +1,29 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<div class="col-12">
+    <div class="expand">
+        <div class="expand-label" tabindex="0" style="cursor: pointer;" onclick="toggle(this)" onkeydown="if(event.keyCode == 13){toggle(this)}">
+            <i class="ti-plus text-gold"></i>
+            <span>
+            {{$expandMessage := T "Expand-title"}}
+            {{ if .IsNamedParams }}
+            {{.Get "default" | default $expandMessage}}
+            {{else}}
+            {{.Get 0 | default $expandMessage}}
+            {{end}}
+            </span>
+        </div>
+        <div class="expand-content pl-5" style="display: none;">
+            {{.Inner | safeHTML}}
+        </div>
+        <script>
+            function toggle(element){
+                $h = $(element);
+                $h.next('div').slideToggle(100, function () {
+                    $h.children('i').attr('class', function () {
+                        return $h.next('div').is(':visible') ? 'ti-minus text-gold' : 'ti-plus text-gold';
+                    });
+                });
+            }
+        </script>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 # default configuration
 baseURL = "https://photography-theme.netlify.app"
 languageCode = "en-us"
-title = "Photography"
+title = "Lock and Shutter Photography"
 
 # css plugins
 [[params.plugins.css]]
@@ -47,17 +47,14 @@ name = "Gallery"
 weight = 2
 
 [[menu.main]]
-URL = "package"
+URL = "packages"
 name = "Packages"
 weight = 3
-
 
 [[menu.main]]
 URL = "contact"
 name = "Get in Touch"
 weight = 4
-
-
 
 # menu footer
 [[menu.footer]]
@@ -66,24 +63,26 @@ name = "About"
 weight = 1
 
 [[menu.footer]]
-URL = "about"
-name = "About"
-weight = 1
+URL = "gallery"
+name = "Gallery"
+weight = 2
 
 [[menu.footer]]
-URL = "about"
-name = "About"
-weight = 1
+URL = "packages"
+name = "Packages"
+weight = 3
+
 
 [[menu.footer]]
-URL = "about"
-name = "About"
-weight = 1
+URL = "contact"
+name = "Get in Touch"
+weight = 4
 
 # default parameters
 [params]
 home = "Home"
-logo = ""
+# logo = "/images/icons/lsp-logo.svg"
+logo = "/images/icons/lock-shutter-photography-logo-3.svg"
 # contact info
 email = "lockandshutterphotography@outlook.com"
 address = "Huntington, WV"
@@ -110,9 +109,6 @@ form_action = "https://formspree.io/f/xknkvnla" # contact form works with : http
 [params.map]
 enable = true
 gmap_api = "https://maps.googleapis.com/maps/api/js?key=&#038;types=(cities)&#038;libraries=places&#038;language=en"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
-map_marker = "images/marker.png"
 
 # cookies
 [params.cookies]
@@ -121,17 +117,10 @@ expire_days = 2
 
 # social site
 [[params.social]]
-icon = "ti-facebook"
-URL = "#"
-
-[[params.social]]
 icon = "ti-instagram"
-URL = "#"
+URL = "https://www.instagram.com/lockandshutterphotography/?igshid=eyvstsqvaogj"
 
 [[params.social]]
-icon = "ti-twitter-alt"
-URL = "#"
+icon = "ti-email"
+URL = "mailto:lockandshutterphotography@outlook.com"
 
-[[params.social]]
-icon = "ti-pinterest-alt"
-URL = "#"

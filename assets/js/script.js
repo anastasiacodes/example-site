@@ -7,13 +7,13 @@ $(window).on('load', function () {
 	'use strict';
 
 	// Sticky Menu
-	$(window).scroll(function () {
-		if ($('.navigation').offset().top > 100) {
-			$('.navigation').addClass('nav-bg');
-		} else {
-			$('.navigation').removeClass('nav-bg');
-		}
-	});
+	// $(window).scroll(function () {
+	// 	if ($('.navigation').offset().top > 100) {
+	// 		$('.navigation').addClass('nav-bg');
+	// 	} else {
+	// 		$('.navigation').removeClass('nav-bg');
+	// 	}
+	// });
 
 	// Background-images
 	$('[data-background]').each(function () {
@@ -36,14 +36,18 @@ $(window).on('load', function () {
 		});
 	});
 
+	$('.lazy').slick({
+		lazyLoad: 'ondemand',
+		slidesToShow: 1,
+		slidesToScroll: 1
+	  });
+
 	// hero-slider
     $('.hero-slider').slick({
-        // autoplay: true,
         infinite: true,
-        speed: 600,
         slidesToShow: 1,
-        prevArrow: '<a class="prev"></a>',
-        nextArrow: '<a class="next"></a>',
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
 		mobileFirst: true,
 		adaptiveHeight: true,
     });
@@ -60,8 +64,8 @@ $(window).on('load', function () {
 	});
 
 
-	// clients logo slider
-	$('.client-logo-slider').slick({
+	// Showroom slider
+	$('.showroom-slider').slick({
 		infinite: true,
 		slidesToShow: 4,
 		slidesToScroll: 1,
@@ -77,13 +81,6 @@ $(window).on('load', function () {
 			},
 			{
 				breakpoint: 600,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 480,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1
@@ -107,16 +104,15 @@ $(window).on('load', function () {
 			itemSelector: '.shuffle-item',
 			buffer: 1
 		});
-
 		jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
 			var input = evt.currentTarget;
-			console.log(input);
+
 			if (input.checked) {
 				myShuffle.filter(input.value);
+				
 			}
 			
 		});
 	}
-
 
 })(jQuery);

@@ -1,19 +1,34 @@
 
 hero_slider:
   item:
-    - image: "/images/placeholder-image.png"
+    - image: "/images/heros/hero-1.jpg"
       title: "Hero 1"
 
-    - image: "/images/placeholder-image.png"
+    - image: "/images/heros/hero-2.jpg"
       title: "Hero 2"
 
-    - image: "/images/placeholder-image.png"
+    - image: "/images/heros/hero-3.jpg"
       title: "Hero 3" 
+
+    - image: "/images/heros/hero-4.jpg"
+      title: "Hero 4"
+
+    - image: "/images/heros/hero-5.jpg"
+      title: "Hero 5"
+
+    - image: "/images/heros/hero-6.jpg"
+      title: "Hero 6"   
+
+    - image: "/images/heros/hero-7.jpg"
+      title: "Hero 7"
+
+    - image: "/images/heros/hero-8.jpg"
+      title: "Hero 8"           
 
 # about
 about:
   enable : true
-  content : "I’m Nichole Steffey, creator of Lock and Shutter Photography. I have a passion for capturing life’s moments and turning those moments into lasting shareable stories for others. I would love to get to know you and tell your story. Let’s work together!"
+  content : "I’m Nichole Steffey, creator of Lock and Shutter Photography. I have a passion for capturing life’s moments and turning those moments into lasting, shareable stories for others. I would love to get to know you and tell your story. Let’s work together!"
   button:
     enable : true
     label : "Learn More"
@@ -27,19 +42,19 @@ work:
   button : "See all Galleries"
   item : 
     - title: "Engagement"
-      image: "/images/homepage-showcase-gallery/showcase-engagement.jpg"
+      image: "/images/galleries/gallery-covers/engagement-cover-1.jpg"
       button:
         enable : true
         URL : "/gallery/#engagement"
 
     - title: "Portrait"
-      image: "/images/homepage-showcase-gallery/showcase-portrait.jpg"
+      image: "/images/galleries/gallery-covers/portrait-cover-1.jpg"
       button:
         enable : true
         URL : "/gallery/#portrait"
 
     - title: "Lifestyle"
-      image: "/images/homepage-showcase-gallery/showcase-lifestyle.jpg"
+      image: "/images/galleries/gallery-covers/lifestyle-cover-2.jpg"
       button:
         enable : true
         URL : "/gallery/#lifestyle"
@@ -48,24 +63,41 @@ work:
 showroom_slider:
   enable : true
   item:
-    - logo : "images/portrait-gallery/portrait-4-min.jpg"
-      URL : "http://examplesite.com"
+    - img : "/images/galleries/showcase-slider-gallery/showcase-slider-1.jpg"
+      alt: "Couple at sunset"
       
-    - logo : "images/portrait-gallery/portrait-4-min.jpg"
-      URL : "#"
-      
-    - logo : "images/portrait-gallery/portrait-4-min.jpg"
-      URL : "http://examplesite.com"
-      
-    - logo : "images/portrait-gallery/portrait-4-min.jpg"
-      URL : "#"
+    - img : "/images/galleries/showcase-slider-gallery/showcase-slider-2.jpg"
+      alt: "Couple holding cat" 
 
-    - logo : "images/portrait-gallery/portrait-4-min.jpg"
-      URL : "http://examplesite.com"
-      
-    - logo : "images/portrait-gallery/portrait-4-min.jpg"
-      URL : "#"      
+    - img : "/images/galleries/showcase-slider-gallery/showcase-slider-3.jpg"
+      alt: "Pregnant woman at park" 
 
+    - img : "/images/galleries/showcase-slider-gallery/showcase-slider-4.jpg"
+      alt: "Woman looking at sunset" 
+
+    - img : "/images/galleries/showcase-slider-gallery/showcase-slider-5.jpg"
+      alt: "Woman looking into field"   
+
+    - img : "/images/galleries/showcase-slider-gallery/showcase-slider-6.jpg"
+      alt: "Woman holding Halloween bouquet" 
+
+    - img : "/images/galleries/showcase-slider-gallery/showcase-slider-7.jpg"
+      alt: "Woman holding pregnant belly" 
+      
+    - img : "/images/galleries/showcase-slider-gallery/showcase-slider-8.jpg"
+      alt: "Couple overlooking a bridge" 
+      
+    - img : "/images/galleries/showcase-slider-gallery/showcase-slider-9.jpg"
+      alt: "Woman burning wedding photos" 
+      
+    - img : "/images/galleries/showcase-slider-gallery/showcase-slider-10.jpg"
+      alt: "Wedding dress burning" 
+
+    - img : "/images/galleries/showcase-slider-gallery/showcase-slider-11.jpg"
+      alt: "Girl with softball and glove" 
+      
+    - img : "/images/galleries/showcase-slider-gallery/showcase-slider-12.jpg"
+      alt: "Child squeezing icing" 
       
   
 

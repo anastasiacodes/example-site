@@ -1,0 +1,101 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<!-- about -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        {{ .Content }}
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /about -->
+
+<!-- packages -->
+<section class="packages pb-5">
+  <div class="container pb-5">
+    <h2>Package Options</h2>
+
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="btn-group btn-group-toggle justify-content-center d-flex flex-wrap" data-toggle="buttons">
+          <label class="btn btn-sm btn-primary active">
+            <input type="radio" name="shuffle-filter" value="engagement" checked="checked" />All
+          </label>
+          
+          {{ $categories := slice }}
+          {{ range site.Data.packages.packages.item }}
+          {{ range .categories }}
+          {{ $categories = $categories | append . }}
+          {{ end }}
+          {{ end }}
+          {{ range ( $categories | uniq ) }}
+          <label class="btn btn-sm btn-primary active">
+            <input type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ . | humanize }}
+          </label>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+   
+    <div class="row shuffle-wrapper">
+      {{ range site.Data.packages.packages.item }}
+      <div class="col-lg-12 shuffle-item" data-groups="[{{range $index, $element := .categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
+        <div class="position-relative rounded">
+          <div class="row justify-content-around swap my-4 py-5">
+            <div class="col-lg-3 col-sm-12">
+              <img src="{{ .image | safeURL }}" class="img-fluid rounded d-block" alt="{{ .title | markdownify }}">
+            </div>
+            <div class="col-lg-6">
+              <h4 data-font='title-1/small'>{{ .title| markdownify}}</h4>
+              <p>{{.description | markdownify }}</p>
+             <div class="row">
+                <div class="col-6">
+                  <h4 data-font='title-2/small'>{{ .package_1 }}</h4>
+                  <p>{{ .cost_1 | markdownify }}</p>
+                  <ul>
+                      {{ if .feature_1_1 }}
+                      <li>{{ .feature_1_1 | markdownify }}</li>
+                      {{ else }} 
+                      <li>{{ .feature_1 | markdownify }}</li>
+                      {{ end }}
+
+                      {{ if .feature_1_1 }}
+                      <li>{{ .feature_2_1 | markdownify }}</li>
+                      {{ else }} 
+                      <li>{{ .feature_2 | markdownify }}</li>
+                      {{ end }}
+                  </ul>
+                </div>
+
+                {{ if .package_2 }}
+                <div class="col-6">
+                  <h4 data-font='title-2/small'>{{ .package_2 }}</h4>
+                  <p>{{ .cost_2 | markdownify }}</p>
+                  <ul>
+                    <li>{{ .feature_1_2 | markdownify }}</li>
+                    <li>{{ .feature_2_2 | markdownify }}</li>
+                  </ul>
+                </div>
+                {{ else }}
+                <div class="col-6" style="display: none;"> </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+
+  </div>
+</section>
+
+
+<!-- /packages -->
+
+{{ end }}

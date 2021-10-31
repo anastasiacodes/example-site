@@ -14,8 +14,8 @@
           <img src="{{.Params.author_image | absURL }}" alt="author"
             class="img-fluid w-100 rounded-lg border-thick border-white">
         </div>
-        <img src="{{.Params.author_signature | absURL }}" alt="signature" class="img-fluid">
-        <h4>{{ site.Params.Author }}</h4>
+        <!-- <img src="{{.Params.author_signature | absURL }}" alt="signature" class="img-fluid"> -->
+        <h4 data-font="title-1/small">{{ site.Params.Author }}</h4>
       </div>
     </div>
   </div>
@@ -25,11 +25,11 @@
 <!-- Work Process -->
 {{ if site.Data.about.photography_process.enable }}
 {{ with site.Data.about.photography_process }}
-<section class="section">
+<section class="pb-5">
   <div class="container">
     <div class="row justify-content-around">
       <div class="col-lg-12 text-center">
-        <h2>Photography Process</h2>
+        <h2 class="pb-4">Photography Process</h2>
         <!-- <h2>{{ .title | markdownify }}</h2> -->
       </div>
       {{ range .item }}
@@ -51,7 +51,7 @@
 <section class="section facts">
   <div class="container">
     <div class="col-lg-12 text-center">
-      <h2>{{ site.Data.about.facts.title | markdownify }}</h2>
+      <h2 class="pb-4">{{ site.Data.about.facts.title | markdownify }}</h2>
     </div>
     <div class="row shuffle-wrapper">
       {{ $item := site.Data.about.facts.item }}

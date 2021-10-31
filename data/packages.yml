@@ -4,58 +4,46 @@ packages :
   title : "My Packages"
   item :
     
-    - title : Engagement Package
-      sub_title : The All-inclusive
+    - title : "Engagement Packages"
+      description: "I adore a good love story; hearing what makes a couple unique and capturing it is one of the best perks of the job. For your engagement session, it is crucial to be authentic to yourselves and to have fun. It’s also a great opportunity to become comfortable in front of a lens before the big day. I will offer light direction but no session is staged – it’s about you, your story as a couple, and the excitement of getting to marry your best friend."
       categories : ["engagement"]
-      cost : "$175"
-      feature_1 : "60 mins"
-      feature_2 : "13-15 downloadable edits"
-      image : "/images/engagement-gallery/engagement-1-min.jpg"
-      description: "Your engagement session can take place somewhere special or unique to you, or if you have something else in mind, we can discuss location and find the perfect spot together."
-
-    - title : Engagement Package
-      sub_title : The Mini-Package
-      categories : ["engagement"]
-      cost : "$125"
-      feature_1 : "30 mins"
-      feature_2 : "6-8 downloadable edits"
-      image : "/images/engagement-gallery/engagement-3-min.jpg"
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-
-    
-    - title : Portrait Package
-      sub_title : The All-inclusive
-      categories : ["portrait"]
-      cost : "$175"
-      feature_1 : "60 mins"
-      feature_2 : "13-15 downloadable edits"
-      image : "/images/engagement-gallery/engagement-1-min.jpg"
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-
-
-    - title : Portrait Package
-      sub_title : The Mini-Package
-      categories : ["portrait"]
-      cost : "$125"
-      feature_1 : "30 mins"
-      feature_2 : "6-8 downloadable edits"
-      image : "/images/engagement-gallery/engagement-3-min.jpg"
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-
-    - title : Lifestyle Package
-      sub_title : The All-inclusive
-      categories : ["lifestyle"]
-      cost : "$175"
-      feature_1 : "60 mins"
-      feature_2 : "13-15 downloadable edits"
-      image : "/images/engagement-gallery/engagement-1-min.jpg"
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      image : "/images/galleries/engagement-gallery/love-field.jpg"
+      package_1 : "The All-inclusive"
+      cost_1 : "$175"
+      feature_1_1 : "60 mins"
+      feature_2_1 : "13-15 downloadable edits"
+      package_2 : "The Mini-Session"
+      cost_2 : "$125"
+      feature_1_2 : "30 mins"
+      feature_2_2 : "6-8 downloadable edits"
  
+
+    - title : "Portrait Packages"
+      description: "Ideal for high school seniors, maternity, headshots, and overall showcasing of the individual. My portrait sessions artistically cater to your style and are exclusive to their personality. Incorporating meaningful surroundings or personal objects allow me to capture your spark, while making you feel comfortable and confident."
+      categories : ["portrait"]
+      image : "/images/galleries/portrait-gallery/maternity-black-white.jpg"
+      package_1 : "The All-inclusive"
+      cost_1 : "$175"
+      feature_1_1 : "60 mins"
+      feature_2_1 : "13-15 downloadable edits"
+      package_2 : "The Mini-Session"
+      cost_2 : "$125"
+      feature_1_2 : "30 mins"
+      feature_2_2 : "6-8 downloadable edits"
+
     - title : Lifestyle Package
-      sub_title : The Mini-Package
+      description: "This lifestyle session package is perfect for capturing candid moments: birthday, playing fetch with the fur babies, baking cookies with the kids, or simply bringing everyone together for portraits. These sessions can take place in the comfort of your own home, somewhere unique to you, or if nothing comes to mind, I can suggest locations. "
       categories : ["lifestyle"]
-      cost : "$125"
-      feature_1 : "30 mins"
-      feature_2 : "6-8 downloadable edits"
-      image : "/images/engagement-gallery/engagement-3-min.jpg"
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      image : "/images/galleries/lifestyle-gallery/mother-child-love.jpg"
+      package_1 : The All-inclusive
+      cost_1 : "$175"
+      feature_1 : "60 mins"
+      feature_2 : "13-15 downloadable edits"
+ 
+    - title : Custom Package
+      description: "Have something else in mind? I embrace the unordinary! Allow me to help your vision come to life with a custom session that is unique to your creativity and needs. From chic boudoir, to squishy newborns, and everything in between, I’m invested in capturing your vision."
+      categories : ["custom"]
+      image : "/images/galleries/portrait-gallery/skater-boys.jpg"
+      cost_1 : "negotiable"
+      feature_1 : "You decide how long"
+      feature_2 : "You let me know how many edited photos you want"

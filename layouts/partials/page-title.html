@@ -3,15 +3,8 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="text-white ">{{ .Title }}</h1>
+        <h1 class="text-white">{{ .Title }}</h1>
       </div>
-      <!-- social icon -->
-      <ul class="list-unstyled position-relative zindex-1">
-        {{ range site.Params.social }}
-        <li class="mb-3 my-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
-        {{ end }}
-      </ul>
-      <!-- /social icon -->
     </div>
   </div>
 </section>

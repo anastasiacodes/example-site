@@ -3,22 +3,15 @@
 
 {{ if site.Params.contact.enable }}
 <!-- contact -->
-<section class="section contact-form-bkg" data-background="{{`/images/contact-form-bkg.jpg` | absURL}}">
+<section class="section contact-form-bkg" data-background="{{`/images/universal-heros/Universal Hero OG BW MS.jpg` | absURL}}">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title text-white">Get in Touch</h2>
-        <!-- social icon -->
-        <ul class="list-unstyled position-relative zindex-1">
-        {{ range site.Params.social }}
-         <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
-        {{ end }}
-        </ul>
-        <!-- /social icon -->
+        <h2 class="text-white" data-font="title-1/medium">Get in Touch</h2>
       </div>
       <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-80">Contact Form</h4>
+        <div class="bg-white rounded text-center p-5">
+          <h4 class="emphasize">Contact Form</h4>
           <p>I’m here for you- whether you’re ready to book, have questions, or want to discuss your needs. I would love to hear from you and get to know you. Fill out the form below to let me know what you need!</p>
           <form action="{{site.Params.contact.form_action}}" method="POST" class="row">
             <div class="col-md-6">
@@ -27,9 +20,21 @@
             <div class="col-md-6">
               <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
             </div>
+            <div class="col-md-6">
+              <input type="text" id="location" name="location" placeholder="Location of photo session" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-md-6 text-left mb-4">
+              <label for="category">I'm interested in...</label>
+              <select class="p-2" id="category" name="category">
+                <option value="engagement">Engagement Photos</option>
+                <option value="portrait">Portrait Photos</option>
+                <option value="lifestyle">Lifestyle Photos</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
             <div class="col-12">
               <textarea name="message" id="message" class="form-control px-0 mb-4"
-                placeholder="Type Message Here"></textarea>
+                placeholder="Type any details here."></textarea>
             </div>
             <div class="col-lg-6 col-10 mx-auto">
               <button class="btn btn-primary w-100">send</button>
@@ -45,37 +50,37 @@
 
 <!-- footer -->
 <footer class="bg-primary  footer-section">
-  <div class="section">
+  <div class="pt-4">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <a class="navbar-brand" href="{{ site.BaseURL }}">
-            {{ if site.Params.logo }}
-            <img src="{{ site.Params.logo | absURL }}" alt="{{site.Title}}">
-            {{ else }}
-            <h1 class="text-white">{{site.Title}}</h1>
-            {{ end }}
-          </a>
-          <ul class="list-unstyled position-relative zindex-1">
-            {{ range site.Params.social }}
-            <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
-            {{ end }}
-          </ul>
+      <div class=" row ">
+        <div class="col-12 d-flex justify-content-center">
+          <img src="{{ site.Params.logo | absURL }}" alt="{{site.Title}}">
         </div>
-        <div class="col-md-4">
-          <ul class="navbar-nav ml-auto">
-            {{ range site.Menus.main }}
-            <li class=" text-white">
-              <a class=" text-white nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
-            </li>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="d-flex col-12 flex-wrap justify-content-center">
+              {{ range site.Menus.footer}}
+                <a class="text-white nav-link underline" href="{{ .URL | absURL }}">{{ .Name }}</a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        <!-- <div class="menu row mx-auto"> -->
+          <!-- <div class="menu d-flex justify-content-center">
+            {{ range site.Menus.footer}}
+              <a class="d-flex col-sm-12 text-white nav-link underline" href="{{ .URL | absURL }}">{{ .Name }}</a>
             {{ end }}
-          </ul>
+          </div> -->
+        <!-- </div> -->
+        <div class="col-lg-7 col-sm-12 d-flex justify-content-center mt-4 mx-auto text-center">
+          <p class="text-white">Servicing the Tri-State area of West Virginia, Kentucky, and Ohio, including: Huntington, Ashland, Ironton and beyond! See if I <a class="link" href="/contact">cover your area!</a></p>
         </div>
-        <div class="col-md-4">
-          <p class="text-white paragraph-lg font-secondary">{{site.Params.email}}</p>
-          <p class="text-white paragraph-lg font-secondary">{{site.Params.address}}</p>
+          <div class="col-12 d-flex justify-content-center">
+          {{ range site.Params.social }}
+          <a class="text-white mb-3" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a>
+          {{ end }}
         </div>
-      </div>
+      </div> 
     </div>
   </div>
   <div class="border-top text-center border-dark py-3 bg-white">
@@ -91,20 +96,9 @@
   });
 </script>
 
-
-{{ "<!-- Google Map API -->" | safeHTML }}
-{{ if site.Params.map.enable }}
-<script src="{{ site.Params.map.gmap_api | safeURL }}"></script>
-{{ end }}
-
-
-
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
-
-
-
 
 <!-- cookie -->
 {{ if site.Params.cookies.enable }}

@@ -2,7 +2,25 @@
 
 {{ partial "page-title.html" . }}
 
-<section class="section pb-0">
+{{ if site.Params.map.enable }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-5">
+        <h2 data-font="title-1/small">Let's Meet Up</h2>
+        <h3>Huntington, WV</h3>
+        <p>Although I’m based out of Huntington, WV, I’m always ready for an adventure and am eager to explore. The map displays the areas I service. If you are outside of the circle, an extra fee will be charged for travel expenses.</p>
+        <p>Feel free to reach out to set up a meeting time.</p>
+      </div>
+      <div class="col-6">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<section class="section">
   <div class="container">
     <div class="row"> 
       {{ .Content }}
@@ -10,26 +28,11 @@
   </div>
 </section>
 
-{{ if site.Params.map.enable }}
-<section class="section pb-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-5">
-        <h2>Let's Meet Up</h2>
-        <h3>City, State</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-      </div>
-      <div class="col-7">
-        {{ with site.Params.map }}
-        {{"<!-- Google Map -->" | safeHTML}}
-        <div class="shadow" id="map" data-latitude="{{ .map_latitude }}" data-longitude="{{ .map_longitude }}"
-          data-marker="{{ .map_marker | absURL }}" data-marker-name="{{ site.Title }}" style="height: 400px;"></div>
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script type="text/javascript"
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFHiKA0CBkG60KuMm6k52oiOVGkEOU39c&callback=initMap&v=weekly"
+async
+></script>
 
 {{ end }}
+

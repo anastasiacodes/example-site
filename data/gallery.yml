@@ -4,56 +4,280 @@ gallery:
   item:
     - title : "Engagement 1"
       caption: "This is a caption."
-      src : "/images/engagement-gallery/engagement-1-min.jpg"
+      src : "/images/galleries/engagement-gallery/dog-family-sunset.jpg"
       categories: ["engagement"]
       license : "Photography"
 
     - title : "Engagement 2"
       caption: "This is a caption."
-      src : "/images/engagement-gallery/engagement-2-min.jpg"
+      src : "/images/galleries/engagement-gallery/engagement-ring.jpg"
       categories: ["engagement"]
       license : "Photography"
 
     - title : "Engagement 3"
       caption: "This is a caption."
-      src : "/images/engagement-gallery/engagement-3-min.jpg"
+      src : "/images/galleries/engagement-gallery/flower-field-love.jpg"
       categories: ["engagement"]
       license : "Photography"
-     
-    - title : "Portrait 1"
+
+    - title : "Engagement 1"
       caption: "This is a caption."
-      src : "/images/portrait-gallery/portrait-1-min.jpg"
-      categories: ["portrait"]
+      src : "/images/galleries/engagement-gallery/graveyard-engagement.jpg"
+      categories: ["engagement"]
       license : "Photography"
 
-    - title : "Portrait 2"
+    - title : "Engagement 2"
       caption: "This is a caption."
-      src : "/images/portrait-gallery/portrait-2-min.jpg"
+      src : "/images/galleries/engagement-gallery/holding-hands-field.jpg"
+      categories: ["engagement"]
+      license : "Photography"
+
+    - title : "Engagement 3"
+      caption: "This is a caption."
+      src : "/images/galleries/engagement-gallery/kissing-in-graveyard.jpg"
+      categories: ["engagement"]
+      license : "Photography"      
+
+    - title : "Engagement 1"
+      caption: "This is a caption."
+      src : "/images/galleries/engagement-gallery/love-field.jpg"
+      categories: ["engagement"]
+      license : "Photography"
+
+    - title : "Engagement 2"
+      caption: "This is a caption."
+      src : "/images/galleries/engagement-gallery/love-in-mask.jpg"
+      categories: ["engagement"]
+      license : "Photography"
+
+    - title : "Engagement 3"
+      caption: "This is a caption."
+      src : "/images/galleries/engagement-gallery/love-tree-background.jpg"
+      categories: ["engagement"]
+      license : "Photography"
+
+    - title : "Engagement 1"
+      caption: "This is a caption."
+      src : "/images/galleries/engagement-gallery/man-kissing-woman-forehead.jpg"
+      categories: ["engagement"]
+      license : "Photography"
+
+    - title : "Engagement 2"
+      caption: "This is a caption."
+      src : "/images/galleries/engagement-gallery/man-woman-hug-laugh.jpg"
+      categories: ["engagement"]
+      license : "Photography"
+
+    - title : "Engagement 3"
+      caption: "This is a caption."
+      src : "/images/galleries/engagement-gallery/man-woman-hug-love.jpg"
+      categories: ["engagement"]
+      license : "Photography"      
+
+    - title : "Engagement 1"
+      caption: "This is a caption."
+      src : "/images/galleries/engagement-gallery/mountain-engagement.jpg"
+      categories: ["engagement"]
+      license : "Photography"
+
+    - title : "Engagement 3"
+      caption: "This is a caption."
+      src : "/images/galleries/engagement-gallery/police-officer-hug.jpg"
+      categories: ["engagement"]
+      license : "Photography"
+
+    - title : "Engagement 2"
+      caption: "This is a caption."
+      src : "/images/galleries/engagement-gallery/mrs-cup.jpg"
+      categories: ["engagement"]
+      license : "Photography"
+
+    - title : "Engagement 3"
+      caption: "This is a caption."
+      src : "/images/galleries/engagement-gallery/uniformed-man-fiance.jpg"
+      categories: ["engagement"]
+      license : "Photography"
+
+    - title : "Engagement "
+      caption: "This is a caption."
+      src : "/images/galleries/engagement-gallery/upclose-love.jpg"
       URL : "http://examplesite.com"
-      categories: ["portrait"]
+      categories: ["engagement"]
       license : "Photography"
 
     - title : "Portrait 3"
       caption: "This is a caption."
-      src : "/images/portrait-gallery/portrait-3-min.jpg"
+      src : "/images/galleries/portrait-gallery/bouquet-on-fire.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+
+    - title : "Portrait 4"
+      caption: "This is a caption."
+      src : "/images/galleries/portrait-gallery/couple-smiling.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+
+    - title : "Portrait 5"
+      caption: "This is a caption."
+      src : "/images/galleries/portrait-gallery/man-drinking-beer.jpg"
+      categories: ["portrait"]
+      license : "Photography"    
+
+    - title : "Portrait 6"
+      caption: "This is a caption."
+      src : "/images/galleries/portrait-gallery/maternity-black-white.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+
+    - title : "Portrait 12"
+      caption: "This is a caption."
+      src : "/images/galleries/portrait-gallery/skater-boys.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+
+    - title : "Portrait 7"
+      caption: "This is a caption."
+      src : "/images/galleries/portrait-gallery/maternity-photo.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+   
+    - title : "Portrait 1"
+      caption: "This is a caption."
+      src : "/images/galleries/portrait-gallery/baby-looking-at-camera.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+
+    - title : "Portrait 8"
+      caption: "This is a caption."
+      src : "/images/galleries/portrait-gallery/maternity-photos-in-park.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+
+    - title : "Portrait 9"
+      caption: "This is a caption."
+      src : "/images/galleries/portrait-gallery/pregnant-woman-holding-belly.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+
+    - title : "Portrait 10"
+      caption: "This is a caption."
+      src : "/images/galleries/portrait-gallery/pregnant-woman-in-woods.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+
+    - title : "Portrait 11"
+      caption: "This is a caption."
+      src : "/images/galleries/portrait-gallery/skater-boy.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+
+    - title : "Portrait 13"
+      caption: "This is a caption."
+      src : "/images/galleries/portrait-gallery/smoking-dress.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+
+    - title : "Portrait 14"
+      caption: "This is a caption."
+      src : "/images/galleries/portrait-gallery/softball-girl-on-fence.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+
+    - title : "Portrait 14"
+      caption: "This is a caption."
+      src : "/images/galleries/portrait-gallery/softball-girl.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+
+    - title : "Portrait 14"
+      caption: "This is a caption."
+      src : "/images/galleries/portrait-gallery/softball-jersey.jpg"
+      categories: ["portrait"]
+      license : "Photography"
+
+    - title : "Portrait 14"
+      caption: "This is a caption."
+      src : "/images/galleries/portrait-gallery/wedding-photos-burning.jpg"
       categories: ["portrait"]
       license : "Photography"
 
     - title : "Lifestyle 1"
       caption: "This is a caption."
-      src : "/images/lifestyle-gallery/lifestyle-1-min.jpg"
+      src : "/images/galleries/lifestyle-gallery/baby-looking-over-shoulder.jpg"
       categories: ["lifestyle"]
       license : "Photography"
 
     - title : "Lifestyle 2"
       caption: "This is a caption."
-      src : "/images/lifestyle-gallery/lifestyle-2-min.jpg"
+      src : "/images/galleries/lifestyle-gallery/baby-photo.jpg"
       URL : "http://examplesite.com"
       categories: ["lifestyle"]
       license : "Photography"
 
     - title : "Lifestyle 3"
       caption: "This is a caption."
-      src : "/images/lifestyle-gallery/lifestyle-3-min.jpg"
+      src : "/images/galleries/lifestyle-gallery/baking-cookies.jpg"
       categories: ["lifestyle"]
       license : "Photography"
+
+    - title : "Lifestyle 1"
+      caption: "This is a caption."
+      src : "/images/galleries/lifestyle-gallery/family-in-rain-black-white.jpg"
+      categories: ["lifestyle"]
+      license : "Photography"
+
+    - title : "Lifestyle 2"
+      caption: "This is a caption."
+      src : "/images/galleries/lifestyle-gallery/family-photo.jpg"
+      URL : "http://examplesite.com"
+      categories: ["lifestyle"]
+      license : "Photography"
+
+    - title : "Lifestyle 3"
+      caption: "This is a caption."
+      src : "/images/galleries/lifestyle-gallery/family-sister-kiss.jpg"
+      categories: ["lifestyle"]
+      license : "Photography"
+
+    - title : "Lifestyle 1"
+      caption: "This is a caption."
+      src : "/images/galleries/lifestyle-gallery/little-girl-eating-dough.jpg"
+      categories: ["lifestyle"]
+      license : "Photography"
+
+    - title : "Lifestyle 3"
+      caption: "This is a caption."
+      src : "/images/galleries/lifestyle-gallery/mother-child-love.jpg"
+      categories: ["lifestyle"]
+      license : "Photography"
+
+    - title : "Lifestyle 1"
+      caption: "This is a caption."
+      src : "/images/galleries/lifestyle-gallery/mother-child-stirring.jpg"
+      categories: ["lifestyle"]
+      license : "Photography"
+
+    - title : "Lifestyle 3"
+      caption: "This is a caption."
+      src : "/images/galleries/lifestyle-gallery/mother-daughter-decorating-cookies.jpg"
+      categories: ["lifestyle"]
+      license : "Photography"
+
+    - title : "Lifestyle 1"
+      caption: "This is a caption."
+      src : "/images/galleries/lifestyle-gallery/mother-daughter-love.jpg"
+      categories: ["lifestyle"]
+      license : "Photography"
+
+    - title : "Lifestyle 2"
+      caption: "This is a caption."
+      src : "/images/galleries/lifestyle-gallery/sister-hug.jpg"
+      URL : "http://examplesite.com"
+      categories: ["lifestyle"]
+      license : "Photography"
+
+    - title : "Lifestyle 3"
+      caption: "This is a caption."
+      src : "/images/galleries/lifestyle-gallery/ultrasound.jpg"
+      categories: ["lifestyle"]
+      license : "Photography"      

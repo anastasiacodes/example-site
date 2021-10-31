@@ -1,41 +1,47 @@
-<header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="{{ site.BaseURL }}">
-      {{ if site.Params.logo }}
-      <img src="{{ site.Params.logo | absURL }}" alt="{{site.Title}}">
-      {{ else }}
-      <h1 class="text-white">{{site.Title}}</h1>
-      {{ end }}
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-        {{ $current := . }}
-        {{ range site.Menus.main }}
-        {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
-        {{ $active = or $active (eq .Name $current.Title) }}
-        {{ if .HasChildren }}
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {{ .Name }}
-          </a>
-          <div class="dropdown-menu" >
-            {{ range .Children }}
-            <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
-            {{ end }}
-          </div>
-        </li>
+<header class="navigation navbar-dark navbar-expand-lg transparent">
+  <div class="container">
+    <nav class="navbar ">
+      <a class="navbar-logo" href="{{ site.BaseURL }}">
+        {{ if site.Params.logo }}
+        <img src="{{ site.Params.logo | absURL }}" alt="{{site.Title}}">
         {{ else }}
-        <li class="nav-item {{ if $active }}active{{ end }}">
-          <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
-        </li>
+        <h3 class="text-white font-secondary">{{site.Title}}</h3>
         {{ end }}
-        {{ end }}
-      </ul>
-    </div>
-  </nav>
+      </a>
+      <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navigation">
+        <div class="d-flex flex-column nav-container">
+            <ul class="navbar-nav">
+              {{ $current := . }}
+              {{ range site.Menus.main }}
+              {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+              {{ $active = or $active (eq .Name $current.Title) }}
+              <li class="nav-item {{ if $active }}active{{ end }}">
+                <a class="text-white nav-link underline" data-font = 'nav' href="{{ .URL | absURL }}">{{ .Name }}</a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          <div class="d-flex nav-container">
+            <ul class="d-flex justify-content-center">
+              <li class="nav-item icons">
+                <a target="_blank" href="https://www.instagram.com/lockandshutterphotography/?igshid=eyvstsqvaogj">
+                  <i class="text-white nav-link ti-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item icons">
+                <a href="mailto:lockandshutterphotography@outlook.com">
+                  <i class="text-white nav-link ti-email"></i>
+                </a>
+              </li>    
+            </ul>
+          </div>
+        </div>
+    </nav>
+  </div>
+  
 </header>
