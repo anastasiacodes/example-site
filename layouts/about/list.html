@@ -25,17 +25,17 @@
 <!-- Work Process -->
 {{ if site.Data.about.photography_process.enable }}
 {{ with site.Data.about.photography_process }}
-<section class="pb-5">
+<section>
   <div class="container">
     <div class="row justify-content-around">
       <div class="col-lg-12 text-center">
-        <h2 class="pb-4">Photography Process</h2>
+        <h2>Photography Process</h2>
         <!-- <h2>{{ .title | markdownify }}</h2> -->
       </div>
       {{ range .item }}
       <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
-        <img src="{{ .icon | absURL }}" class="mb-4" alt="icon">
-        <h4 class="mb-4">{{ .title }}</h4>
+        <img src="{{ .icon | absURL }}" alt="icon">
+        <h4>{{ .title }}</h4>
         <p>{{ .content | markdownify }}</p>
       </div>
       {{ end }}
@@ -53,10 +53,10 @@
     <div class="col-lg-12 text-center">
       <h2 class="pb-4">{{ site.Data.about.facts.title | markdownify }}</h2>
     </div>
-    <div class="row shuffle-wrapper">
+    <div class="row shuffle-wrapper  mx-4">
       {{ $item := site.Data.about.facts.item }}
       {{ range $item }}
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+      <div class="col-lg-4 col-md-6 col-12 mb-4 shuffle-item">
 
         <div class="position-relative rounded">
             <img src="{{ .image | safeURL }}" class="img-fluid rounded d-block" alt="{{ .title | markdownify }}">

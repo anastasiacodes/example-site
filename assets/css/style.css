@@ -65,7 +65,6 @@ body [data-font = 'title-2/medium'] {
   letter-spacing: -0.03em;
   text-decoration: none;
   text-transform: none;
-  padding-bottom: 25px;
   font-weight: 100;
 }
 body [data-font = 'title-2/small'] {
@@ -88,7 +87,7 @@ body [data-font = 'nav'] {
 }
     @media(max-width:991px) {
       body [data-font = 'nav'] {
-        font-size: .75rem;
+        font-size: 1rem;
       }
     }
 
@@ -148,7 +147,6 @@ h2, h3 {
   letter-spacing: -0.03em;
   text-decoration: none;
   text-transform: none;
-  padding-bottom: 25px;
   font-weight: 100;
 }
 
@@ -926,9 +924,9 @@ background-repeat: no-repeat;
 }
 
 
-div:nth-child(even) .swap {
+/* div:nth-child(even) .swap {
   flex-direction: row-reverse;
-}
+} */
 
 .facts img {
   position: relative;

@@ -1,7 +1,7 @@
 ---
 title: "About"
 description: "This is meta description."
-author_image : "/images/about/profile-pic-joke.jpg"
+author_image : "/images/about/profile-2.jpg"
 ## author_image : "/images/about/profile-2.jpg"
 author_signature : "images/about/signature.png"
 draft: false
