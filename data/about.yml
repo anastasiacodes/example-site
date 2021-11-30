@@ -22,28 +22,16 @@ facts:
   title : "Fun Facts About Me"
   item:
     - fact : "I have two furbaby pups that I treat like real human children – yep, I’m one of those people"
-      image : "/images/placeholder-image-long.png"
       
-    - fact : "I have a sweet tooth, 28 to be exact."
-      image : "/images/placeholder-image-long.png"
+    - fact : "I have a sweet tooth, 28 to be exact"
 
     - fact : "A quirky sense of humor. See other facts for example"
-      image : "/images/placeholder-image-long.png"
 
     - fact : "Married to my high school redheaded beauty"
-      image : "/images/placeholder-image-long.png"
 
     - fact : "Board games are my jam – except Monopoly, I’ve NEVER won!"
-      image : "/images/placeholder-image.png"
 
     - fact : "I’m an old soul with a young heart"
-      image : "/images/placeholder-image-long.png"
 
     - fact : "A lover of adventure, smooth bourbon, rock music, good vibes, good times and good people"
-      image : "/images/placeholder-image-long.png"
 
-# client logo slider
-clients_logo_slider:
-  enable : true
-  title : "My Clients"
-  # clients logo comes from 'data/homepage.yml' file

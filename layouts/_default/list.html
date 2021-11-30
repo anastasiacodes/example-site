@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+  {{ partial "page-title.html" . }}
+
+  <!-- blog -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        {{ .Content }}
+        {{ range .Pages }}
+       <li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- /blog -->
+
+{{ end }}

@@ -1,0 +1,42 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<section class="section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="btn-group btn-group-toggle justify-content-center d-flex flex-wrap" data-toggle="buttons">
+          <label class="btn btn-sm btn-primary active">
+              <input type="radio" name="shuffle-filter" value="all"/>All
+          </label>
+        {{ $categories := slice }}
+        {{ range (.Params.categories)  }}
+        {{ $categories = $categories | append . }}
+        {{ end }}
+        {{ range ( $categories | uniq ) }}
+      <label id="{{ . | urlize }}" class="btn btn-sm btn-primary">
+        <input type="radio" name="shuffle-filter"  value="{{ . | urlize }}" />{{ . | humanize }}
+      </label>
+      {{ end }}
+    </div>
+
+    {{ $src := "/images/galleries/portrait-gallery/baby-looking-at-camera.jpg" }}
+    {{ with partial "tnd-imgix/GetSRC" $src }}
+   
+      <img src="{{ $src = . }}" alt="ttt">
+    {{ end }}
+    <div class="row shuffle-wrapper">
+
+      
+
+
+  </div>
+
+  </div>
+</section> 
+
+
+
+{{ end }}
+

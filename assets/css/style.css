@@ -261,7 +261,12 @@ ul {
   list-style-type: none;
   margin: 0
 }
-
+.disc {
+  list-style-type: disc;
+}
+.disc::marker {
+  color: var(--gold-color);
+} 
 img {
   vertical-align: middle;
   border: 0
