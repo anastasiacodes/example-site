@@ -33,9 +33,9 @@
       <div class="col-lg-4 col-6 mt-4 shuffle-item" data-groups="[{{$index:= .Params.categories }}{{if ne $index 0}}&quot;{{ .Params.categories | urlize}}&quot;{{ end }}]" >
         <div class="position-relative rounded">
           <a href="{{ .RelPermalink }}" data-toggle="lightbox" data-gallery="example-gallery" class="img-fluid rounded w-100 d-block position-relative rounded hover-wrapper"  >         
-            {{ $small := .Fill "500x450" }}
-            {{ $medium := .Fill "800x750" }}
-            {{ $large := .Fill "1200x950" }}
+            {{ $small := .Resize "300x" }}
+            {{ $medium := .Resize "800x" }}
+            {{ $large := .Resize "1200x" }}
               <picture class="img-fluid rounded d-block">
               <source  media="(max-width: 376px)" class="img-fluid rounded d-block" 
               srcset="{{ $small.RelPermalink }}">
