@@ -1,6 +1,9 @@
 ---
 title: "Gallery"
 description: "This is meta description."
-draft: false
 gallery: true
+categories:
+- Engagement
+- Portrait
+- Lifestyle
 ---

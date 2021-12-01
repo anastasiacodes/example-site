@@ -726,10 +726,7 @@ blockquote {
 .page-title-alt::after {
   content: '';
   position: absolute;
-   /* background-image: url('/images/universal-heros/Universal Hero 1 MS.jpg'); */
-  /* background-image: url('/images/universal-heros/Universal Hero 2 MS.jpg'); */
-  background-image: url('/images/universal-heros/Universal Hero 3 MS.jpg');
-  /* background-image: url('/images/universal-heros/Universal Hero 4 BW MS.jpg');  */
+  background-image: url('/images/universal-heros/page-title-bkground-desktop.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -739,6 +736,17 @@ blockquote {
   left: 0px;
   opacity: 0.15;
 } 
+@media(max-width: 376px) {
+  .page-title-alt::after {
+    background-image: url('/images/universal-heros/page-title-bkground-mobile.jpg');
+  }
+}
+@media(max-width: 992px) {
+  .page-title-alt::after {
+    background-image: url('/images/universal-heros/page-title-bkground-tablet.jpg');
+  }
+}
+
 
 .border {
   border: .25px solid var(--gold-color) !important;
@@ -904,6 +912,33 @@ section .about {
     display: none;
   }
 }
+.contact-form-bkg{
+  position: relative;
+}
+.contact-form-bkg::after {
+  content: '';
+  position: absolute;
+  background-image: url('/images/universal-heros/contact-form-bkground-desktop.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -5;
+} 
+@media(max-width: 376px) {
+  .contact-form-bkg::after {
+    background-image: url('/images/universal-heros/contact-form-bkground-mobile.jpg');
+  }
+}
+@media(max-width: 992px) {
+  .contact-form-bkg::after {
+    background-image: url('/images/universal-heros/contact-form-bkground-tablet.jpg');
+  }
+}
+
 
 .footer-section {
   background-color: #2e3f2ebf;

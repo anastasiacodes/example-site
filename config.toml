@@ -46,10 +46,6 @@ URL = "gallery"
 name = "Gallery"
 weight = 2
 
-[[menu.main]]
-URL = "gallery-copy"
-name = "Gallery-2"
-weight = 5
 
 [[menu.main]]
 URL = "packages"
