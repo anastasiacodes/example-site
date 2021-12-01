@@ -1,5 +1,5 @@
 <div class="showroom-slider d-flex align-items-center">
   {{ range site.Data.homepage.showroom_slider.item }}
-  <span class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid rounded" data-lazy="{{.img | absURL}}" alt="{{.alt | absURL}}"></span>
+  <span class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid rounded" data-lazy="{{.img | absURL}}" alt="{{.alt | absURL}}" width="300" height="200"></span>
   {{ end }}
 </div>

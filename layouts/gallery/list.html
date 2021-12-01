@@ -26,7 +26,6 @@
     <div class="row shuffle-wrapper">
       {{ range .Pages }}
           {{ $all_images = $all_images | append (.Resources.ByType "image") }}
-  
       {{ end }}
       
       {{ range $all_images }}
@@ -38,10 +37,10 @@
             {{ $large := .Resize "1200x" }}
               <picture class="img-fluid rounded d-block">
               <source  media="(max-width: 376px)" class="img-fluid rounded d-block" 
-              srcset="{{ $small.RelPermalink }}">
+              srcset="{{ $small.RelPermalink }}" width="300" height="250">
               <source media="(max-width: 992px)"  class="img-fluid rounded d-block" 
-              srcset="{{ $medium.RelPermalink }}">
-              <img class="img-fluid rounded d-block" src="{{ $large.RelPermalink }}" alt="">
+              srcset="{{ $medium.RelPermalink }}" width="780" height="580">
+              <img class="img-fluid rounded d-block" src="{{ $large.RelPermalink }}" alt="{{ .Title }}" width="780" height="580">
               </picture> 
           </a>
         </div>

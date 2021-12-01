@@ -1,19 +1,7 @@
 {{ define "main" }}
-<!-- hero area -->
-<section class="hero-area">
-  <div class="hero-slider">
-    {{ range site.Data.homepage.hero_slider.item }}
-        <img src="{{.image | absURL}}">
-    {{ end }}
-  </div>
-  <div class="paginator d-flex flex-column justify-content-center">
-    <ul class="d-flex justify-content-between align-content-center px-3">
-        <li class="prev"></li>
-        <li class="next text-end"></li>
-    </ul>
-  </div>
-</section>
-<!-- /hero area -->
+
+{{ partial "hero-slider.html" . }}
+
 
 {{ if site.Data.homepage.about.enable }}
 <!-- about -->
@@ -58,7 +46,7 @@
         <div class="col-lg-4 col-md-6 col-s-8">
           <h3 class="text-center text-white mt-3">{{.title}}</h3>
           <div class="position-relative rounded hover-wrapper border img-container mx-3">
-            <img src="{{.image | absURL }}" alt="gallery-image" class="img-fluid rounded d-block">
+            <img src="{{.image | absURL }}" alt="{{ .alt }}" class="img-fluid rounded d-block" width="850" height="567">
             <div class="hover-overlay">
               <div class="hover-content">
                 {{ if .button.enable }}
@@ -82,29 +70,9 @@
   </section>
   <!-- /work -->
 
-  
- <!-- process -->
- {{ if site.Data.about.photography_process.enable }}
-{{ with site.Data.about.photography_process }}
-<section class="section">
-  <div class="container">
-    <div class="row justify-content-around">
-      <div class="col-lg-12 text-center">
-        <h2>{{ .title | markdownify }}</h2>
-      </div>
-      {{ range .item }}
-      <div class="col-lg-3 col-md-4 text-center hover-shadow">
-        <img src="{{ .icon | absURL }}" alt="icon">
-        <h4>{{ .title }}</h4>
-        <p>{{ .content | markdownify }}</p>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
- <!-- /process -->
+  {{ partial "photography-process.html" . }}
+
+
 
   {{ if site.Data.homepage.showroom_slider.enable }}
   <!-- showroom slider -->
