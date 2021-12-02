@@ -25,7 +25,7 @@ facts:
       
     - fact : "I have a sweet tooth, 28 to be exact"
 
-    - fact : "A quirky sense of humor. See other facts for example"
+    - fact : "A quirky sense of humor. See above fact for example"
 
     - fact : "Married to my high school redheaded beauty"
 
