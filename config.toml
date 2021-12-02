@@ -61,7 +61,7 @@ weight = 4
 # default parameters
 [params]
 home = "Home"
-# logo = "/images/icons/lsp-logo.svg"
+
 logo = "/images/icons/lock-shutter-photography-logo-2.svg"
 # contact info
 email = "lockandshutterphotography@outlook.com"
