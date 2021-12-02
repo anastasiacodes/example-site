@@ -26,16 +26,21 @@
   <script src="{{ .link | absURL }}"></script>
   {{ end }}
 
-  {{ with site.Params.google_analytics_id }}
-	{{ "<!-- Global Site Tag (gtag.js) - Google Analytics -->" | safeHTML }}
-	<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+  {{ if .Params.gallery }}
+  <link rel="stylesheet" href="{{ `plugins/lightbox/ekko-lightbox.css` | absURL }}">
+  <script src="{{ `plugins/lightbox/ekko-lightbox.min.js` | absURL }}"></script>
+  <script src="{{ `plugins/lightbox/ekko-lightbox.min.js.map` | absURL }}"></script>
+  <script src="{{ `plugins/shuffle/shuffle.min.js` | absURL }}"></script>
+  {{ end }}
 
-	  gtag('config', '{{ . }}');
-	</script>
-	{{ end }}
+  {{ if .Params.slick }}
+  <link rel="stylesheet" href="{{ `plugins/slick/slick.css` | absURL }}">
+  <script src="{{ `plugins/slick/slick.min.js` | absURL }}"></script>
+  {{ end }}
+
+  {{ if .Params.map }}
+  <script src="{{ `plugins/google-map/map.js` | absURL }}"></script>
+  {{ end }}
+
  
 </head>

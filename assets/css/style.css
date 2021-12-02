@@ -949,12 +949,6 @@ section .about {
   justify-content: left;
 }
 
-[data-background] {
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-}
-
 .mt-0 {
   margin: 0 1rem 1rem 1rem;
 }
