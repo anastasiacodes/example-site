@@ -11,12 +11,6 @@ VERSION: Versoin Number
   --gold-color: #D4AF37;
   --forest-green: #15221C;
   }
-
-@font-face {
-  font-family: "Stalemate";
-  src: url("/fonts/Stalemate-Regular.ttf") format("woff");
-}
-
 @font-face {
   font-family: "Antro Vectra";
   src: url("/fonts/antro_vectra/Antro_Vectra.otf") format("woff");
