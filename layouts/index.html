@@ -49,11 +49,6 @@
             <img src="{{.image | absURL }}" alt="{{ .alt }}" class="img-fluid rounded d-block" width="850" height="567">
             <div class="hover-overlay">
               <div class="hover-content">
-                {{ if .button.enable }}
-                {{ with .button }}
-                <a href="{{ .URL | absURL }}" class="btn btn-light">see gallery</a>
-                {{ end }}
-                {{ end }}
               </div>
             </div>
           </div>
