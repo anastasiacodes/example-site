@@ -12,6 +12,10 @@ VERSION: Versoin Number
   --forest-green: #15221C;
   }
 
+@font-face {
+  font-family: "Stalemate";
+  src: url("/fonts/Stalemate-Regular.ttf") format("woff");
+}
 
 @font-face {
   font-family: "Antro Vectra";
