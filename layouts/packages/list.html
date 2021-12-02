@@ -9,7 +9,6 @@
       <div class="col-lg-12">
         {{ .Content }}
       </div>
-
     </div>
   </div>
 </section>
@@ -23,7 +22,8 @@
         {{ $item:= site.Data.packages.packages.item }}
         {{ range $item }} 
         <div class="col-lg-3 text-center py-4 hover-shadow">
-          <h3  data-font="title-1/small">{{ .length }}</h3>
+          <h3 data-font="title-1/small">{{ .title }}</h3>
+          <h3 class="lead">{{ .length }}</h3>
           <span class="lead">{{ .cost }}</span> 
           <hr class="border">
           <p>{{ .description }}</p> 

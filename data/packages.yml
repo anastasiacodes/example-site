@@ -4,16 +4,20 @@ packages :
   title : "Photography Packages"
   item :
     
-    - length : "30 minutes"
-      description: "I adore a good love story; hearing what makes a couple unique and capturing it is one of the best perks of the job. For your engagement session, it is crucial to be authentic to yourselves and to have fun. It’s also a great opportunity to become comfortable in front of a lens before the big day. I will offer light direction but no session is staged – it’s about you, your story as a couple, and the excitement of getting to marry your best friend."
-      cost : "$125"
+    - title: "The Mini Package"
+      length: "45 minutes"
+      description: "This mini package provides a quick and easy portrait option for those who only want a few edits, one location and one outfit. Ideal for small families, couples, headshots, and holiday portraits."
+      cost : "$130"
 
-    - length : "60 minutes"
-      description: "Ideal for high school seniors, maternity, headshots, and overall showcasing of the individual. My portrait sessions artistically cater to your style and are exclusive to their personality. Incorporating meaningful surroundings or personal objects allow me to capture your spark, while making you feel comfortable and confident."
-      cost : "$175"
+    - title: The All-Inclusive Package
+      length : "90 minutes"
+      description: "This package is perfect for engaged couples, families with 2 or more children, high school seniors, maternity portraits. This includes a variety of edits, shot at multiple locations, with multiple outfits."
+      cost : "$200"
 
-    - length : "Custom"
-      description: "Have something  else in mind? I embrace the unordinary! Allow me to help your vision come to life with a custom session that is unique to your creativity and needs. From chic boudoir, to squishy newborns, and everything in between, I’m invested in capturing your vision. Contact me with your request and we can discuss your custom session, the process and price.  "
+    - title: "Custom Package"
+      length : "Custom"
+      description: "Have something else in mind? Allow me to help your vision come to life with a custom session that is unique to your wants and needs.  
+Contact me with your request and we can discuss your custom session, the process, and the price."
       cost : "$negotable"
  
 
