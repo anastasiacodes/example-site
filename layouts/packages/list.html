@@ -23,8 +23,9 @@
         {{ range $item }} 
         <div class="col-lg-3 text-center py-4 hover-shadow">
           <h3 data-font="title-1/small">{{ .title }}</h3>
-          <h3 class="lead">{{ .length }}</h3>
-          <span class="lead">{{ .cost }}</span> 
+          <h4 class="lead">{{ .length }}</h4>
+          <h5 class="lead">{{ .cost }}</h5>
+          <h6 class="lead">{{ .edits }}</h6>  
           <hr class="border">
           <p>{{ .description }}</p> 
         </div>

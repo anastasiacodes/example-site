@@ -8,17 +8,20 @@ packages :
       length: "45 minutes"
       description: "This mini package provides a quick and easy portrait option for those who only want a few edits, one location and one outfit. Ideal for small families, couples, headshots, and holiday portraits."
       cost : "$130"
+      edits: "7-9 downloadable edits"
 
     - title: The All-Inclusive Package
       length : "90 minutes"
       description: "This package is perfect for engaged couples, families with 2 or more children, high school seniors, maternity portraits. This includes a variety of edits, shot at multiple locations, with multiple outfits."
       cost : "$200"
+      edits: "15-18 downloadable edits"
+
 
     - title: "Custom Package"
       length : "Custom"
       description: "Have something else in mind? Allow me to help your vision come to life with a custom session that is unique to your wants and needs.  
 Contact me with your request and we can discuss your custom session, the process, and the price."
-      cost : "$negotable"
+
  
 
 gallery :
