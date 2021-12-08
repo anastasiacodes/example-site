@@ -15,46 +15,46 @@ link = "plugins/bootstrap/bootstrap.min.js"
 
 # menu header
 [[menu.main]]
-URL = "about"
+URL = "/about"
 name = "About"
 weight = 1
 
 
 [[menu.main]]
-URL = "gallery"
+URL = "/gallery"
 name = "Gallery"
 weight = 2
 
 
 [[menu.main]]
-URL = "packages"
+URL = "/packages"
 name = "Packages"
 weight = 3
 
 [[menu.main]]
-URL = "contact"
+URL = "/contact"
 name = "Get in Touch"
 weight = 4
 
 # menu footer
 [[menu.footer]]
-URL = "about"
+URL = "/about"
 name = "About"
 weight = 1
 
 [[menu.footer]]
-URL = "gallery"
+URL = "/gallery"
 name = "Gallery"
 weight = 2
 
 [[menu.footer]]
-URL = "packages"
+URL = "/packages"
 name = "Packages"
 weight = 3
 
 
 [[menu.footer]]
-URL = "contact"
+URL = "/contact"
 name = "Get in Touch"
 weight = 4
 
